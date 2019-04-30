@@ -1,0 +1,202 @@
+[
+  {
+    "source":"United States",
+    "target":"person accused, indicted, or suspected of crime",
+    "value":130
+  },
+  {
+    "source":"United States",
+    "target":"person convicted of crime",
+    "value":31
+  },
+  {
+    "source":"United States",
+    "target":"State",
+    "value":12
+  },
+  {
+    "source":"State",
+    "target":"person accused, indicted, or suspected of crime",
+    "value":151
+  },
+  {
+    "source":"State",
+    "target":"person convicted of crime",
+    "value":104
+  },
+  {
+    "source":"State",
+    "target":"United States",
+    "value":11
+  },
+  {
+    "source":"person accused, indicted, or suspected of crime",
+    "target":"State",
+    "value":244
+  },
+  {
+    "source":"person accused, indicted, or suspected of crime",
+    "target":"United States",
+    "value":232
+  },
+  {
+    "source":"alien, person subject to a denaturalization proceeding, or one whose citize",
+    "target":"United States",
+    "value":20
+  },
+  {
+    "source":"attorney, or person acting as such;includes bar applicant or law student, o",
+    "target":"United States",
+    "value":13
+  },
+  {
+    "source":"water transportation, stevedore",
+    "target":"employee, or job applicant, including beneficiaries of",
+    "value":22
+  },
+  {
+    "source":"person convicted of crime",
+    "target":"United States",
+    "value":105
+  },
+  {
+    "source":"person convicted of crime",
+    "target":"State",
+    "value":218
+  },
+  {
+    "source":"person allegedly criminally insane or mentally incompetent to stand trial",
+    "target":"State",
+    "value":14
+  },
+  {
+    "source":"defendant",
+    "target":"State",
+    "value":14
+  },
+  {
+    "source":"defendant",
+    "target":"United States",
+    "value":33
+  },
+  {
+    "source":"person subject to selective service, including conscientious objector",
+    "target":"United States",
+    "value":22
+  },
+  {
+    "source":"employee, or job applicant, including beneficiaries of",
+    "target":"employer. If employer's relations with employees are governed by the nature",
+    "value":47
+  },
+  {
+    "source":"employee, or job applicant, including beneficiaries of",
+    "target":"railroad",
+    "value":51
+  },
+  {
+    "source":"employer. If employer's relations with employees are governed by the nature",
+    "target":"employee, or job applicant, including beneficiaries of",
+    "value":44
+  },
+  {
+    "source":"employer. If employer's relations with employees are governed by the nature",
+    "target":"union, labor organization, or official of",
+    "value":30
+  },
+  {
+    "source":"female employee or job applicant",
+    "target":"employer. If employer's relations with employees are governed by the nature",
+    "value":15
+  },
+  {
+    "source":"government contractor",
+    "target":"United States",
+    "value":12
+  },
+  {
+    "source":"racial or ethnic minority employee or job applicant",
+    "target":"employer. If employer's relations with employees are governed by the nature",
+    "value":11
+  },
+  {
+    "source":"military personnel, or dependent of, including reservist",
+    "target":"United States",
+    "value":20
+  },
+  {
+    "source":"owner, landlord, or claimant to ownership, fee interest, or possession of l",
+    "target":"United States",
+    "value":20
+  },
+  {
+    "source":"indigent defendant",
+    "target":"State",
+    "value":17
+  },
+  {
+    "source":"prisoner, inmate of penal institution",
+    "target":"governmental official, or an official of an agency established under an int",
+    "value":13
+  },
+  {
+    "source":"prisoner, inmate of penal institution",
+    "target":"State",
+    "value":34
+  },
+  {
+    "source":"prisoner, inmate of penal institution",
+    "target":"United States",
+    "value":12
+  },
+  {
+    "source":"person or organization protesting racial or ethnic segregation or discrimin",
+    "target":"city, town, township, village, or borough government or governmental unit",
+    "value":15
+  },
+  {
+    "source":"person or organization protesting racial or ethnic segregation or discrimin",
+    "target":"State",
+    "value":14
+  },
+  {
+    "source":"railroad",
+    "target":"employee, or job applicant, including beneficiaries of",
+    "value":17
+  },
+  {
+    "source":"taxpayer or executor of taxpayer's estate, federal only",
+    "target":"United States",
+    "value":44
+  },
+  {
+    "source":"union, labor organization, or official of",
+    "target":"railroad",
+    "value":11
+  },
+  {
+    "source":"union, labor organization, or official of",
+    "target":"employer. If employer's relations with employees are governed by the nature",
+    "value":39
+  },
+  {
+    "source":"witness, or person under subpoena",
+    "target":"United States",
+    "value":34
+  },
+  {
+    "source":"Department or Secretary of Labor",
+    "target":"employer. If employer's relations with employees are governed by the nature",
+    "value":17
+  },
+  {
+    "source":"National Labor Relations Board, or regional office or officer",
+    "target":"union, labor organization, or official of",
+    "value":23
+  },
+  {
+    "source":"National Labor Relations Board, or regional office or officer",
+    "target":"employer. If employer's relations with employees are governed by the nature",
+    "value":68
+  }
+]
