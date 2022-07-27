@@ -13,12 +13,7 @@ Examples use fake data, created using random group and variable assignment. `Fak
 
 
 ```{r, message=FALSE, warning=FALSE, comment=NA}
-
-setwd("~/Misc")
-library(pins)
-board <- board_rsconnect(auth="envvar") 
-df <- read.table(pin_read(board, "ANakamur/FakeCohort1"),sep=",", header=TRUE)
-
+df <- read.csv('https://raw.githubusercontent.com/AMNakamura/Data/master/CohortFake1.csv', header=TRUE, sep='|')
 ```
 
 ## A brief introduction to 'objects'
