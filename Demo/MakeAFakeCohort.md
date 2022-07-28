@@ -28,19 +28,24 @@ library(e1071)
 options(scipen = 999)
 # The curve() function will create x and y coordinates for an S-curve.
 # Start high then end low for this run. 
-mos <- data.frame( m = seq.int( 1, 12, 1 ) )
-p  <- invisible(curve(-sigmoid(x) , -6,6))
+mos <- data.frame( m = seq.int( 1, 12, 1 ) )  # Months data frame
+p  <- invisible(curve(-sigmoid(x) , -6,6))    # Visualize the curve
 ```
 
 ![](unnamed-chunk-1-1.png)<!-- -->
 
-``` r
-x  <- rescale(p$x, to = c(1, 12))
-y  <- rescale(p$y, to = c(0,1))
-mt <- predict( loess( y ~ x, span=.1 ), mos$m )
-```
+## Create seasonal weights
 
-Let data set members - Enter the cohort and leave the cohort at any
+Create seasonal weights that can be multiplied by the randomly generated values to create a seasonal pattern in the data. 
+
+``` r
+x  <- rescale(p$x, to = c(1, 12))  # Rescale x to between 1 and 12 months
+y  <- rescale(p$y, to = c(0,1))    # Rescale y to between 0 and 1 
+mt <- predict( loess( y ~ x, span=.1 ), mos$m ) # Create weights
+```
+## Create the cohort members
+
+Let data set members - enter the cohort and leave the cohort at any
 time - Change groups (e.g., classes) midway
 
 ``` r
@@ -59,6 +64,9 @@ MO   <- sample(1:12,nrow(df0),replace=TRUE)
                
 df1 <- cbind.data.frame(df0,GRP,GNDR,PGM,YR,MO,age)   
 ```
+## Create rows for all possible months
+
+Expand the cohort longitudinally by creating up to 10 future values (in rows), one for each month, in order. Select a subset randomly to switch groups and others to exit. Fill new row values with a couple of randomly generated values (indicator 1 and indicator 2) and apply seasonal weights to some of the groups. 
 
 ``` r
 suppressMessages(library(dplyr))
