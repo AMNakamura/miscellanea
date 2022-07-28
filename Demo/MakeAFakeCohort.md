@@ -128,13 +128,13 @@ suppressMessages(library(tidyverse))
 inspect_types(df) %>% show_plot()
 ```
 
-![](MakeAFakeCohort_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 inspect_na(df) %>% show_plot()
 ```
 
-![](MakeAFakeCohort_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
+![](unnamed-chunk-4-2.png)<!-- -->
 
 # Quick Profile
 
@@ -152,7 +152,7 @@ print(dfSummary(df,
 webshot( "MkChrtDfSummary.html", "MkChrtDfSummary.png")
 ```
 
-![](MakeAFakeCohort_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](unnamed-chunk-5-1.png)<!-- -->
 [Stats Snapshot](MkChrtDfSummary.png)
 
 # References
