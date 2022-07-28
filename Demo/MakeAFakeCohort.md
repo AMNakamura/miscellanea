@@ -45,8 +45,7 @@ mt <- predict( loess( y ~ x, span=.1 ), mos$m ) # Create weights
 ```
 ## Create the cohort members
 
-Let data set members - enter the cohort and leave the cohort at any
-time - Change groups (e.g., classes) midway
+Let data set members enter the cohort and leave the cohort at any time and change groups (e.g., courses for an educational program) midway. 
 
 ``` r
 # Start with a list of IDs
@@ -66,7 +65,7 @@ df1 <- cbind.data.frame(df0,GRP,GNDR,PGM,YR,MO,age)
 ```
 ## Create rows for all possible months
 
-Expand the cohort longitudinally by creating up to 10 future values (in rows), one for each month, in order. Select a subset randomly to switch groups and others to exit. Fill new row values with a couple of randomly generated values (indicator 1 and indicator 2) and apply seasonal weights to some of the groups. 
+Expand the cohort longitudinally by creating up to 10 future values (in rows), one for each possible month. Select a random subset of cohort members to switch groups before the end of the cohort period. Select others randomly to exit early (e.g., loss to follow-up). Fill new row values with a couple of randomly generated values (indicator 1 and indicator 2) and apply seasonal weights to some of the groups. 
 
 ``` r
 suppressMessages(library(dplyr))
