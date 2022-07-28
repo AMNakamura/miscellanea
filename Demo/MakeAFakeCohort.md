@@ -32,7 +32,7 @@ mos <- data.frame( m = seq.int( 1, 12, 1 ) )
 p  <- invisible(curve(-sigmoid(x) , -6,6))
 ```
 
-![](MakeAFakeCohort_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](unnamed-chunk-1-1.png)<!-- -->
 
 ``` r
 x  <- rescale(p$x, to = c(1, 12))
