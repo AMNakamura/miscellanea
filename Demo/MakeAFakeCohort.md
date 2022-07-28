@@ -36,7 +36,7 @@ p  <- invisible(curve(-sigmoid(x) , -6,6))    # Visualize the curve
 
 ## Create seasonal weights
 
-Create seasonal weights that can be multiplied by the randomly generated values to create a seasonal pattern in the data. 
+Create seasonal weights that can be used to create a seasonal pattern in the data. 
 
 ``` r
 x  <- rescale(p$x, to = c(1, 12))  # Rescale x to between 1 and 12 months
