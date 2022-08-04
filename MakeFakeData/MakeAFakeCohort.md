@@ -32,7 +32,7 @@ mos <- data.frame( m = seq.int( 1, 12, 1 ) )  # Months data frame
 p  <- invisible(curve(-sigmoid(x) , -6,6))    # Visualize the curve
 ```
 
-![]([MakeFakeData/MakeAFakeCohort/1chrt.sigmoid.png](https://github.com/AMNakamura/miscellanea/blob/4616b41d21591e3da1771375bcab97f37439eae7/MakeFakeData/MakeAFakeCohort/1chrt.sigmoid.png))<!-- -->
+![](MakeFakeData/MakeAFakeCohort/1chrt.sigmoid.png)<!-- -->
 
 ## Create seasonal weights
 
