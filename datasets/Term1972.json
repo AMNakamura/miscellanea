@@ -1,0 +1,1069 @@
+{
+ "name": "cases",
+"_children": [
+ {
+ "name": "advertising business or agency",
+"_children": [
+ {
+ "name": "MILLER v. CALIFORNIA",
+"age":    520 
+} 
+] 
+},
+{
+ "name": "agent fiduciary trustee or executor",
+"_children": [
+ {
+ "name": "COUCH v. UNITED STATES et al.",
+"age":     56 
+} 
+] 
+},
+{
+ "name": "airline",
+"_children": [
+ {
+ "name": "EXECUTIVE JET AVIATION, INC., et al. v. CITY OF CLEVELAND et al.",
+"age":     33 
+},
+{
+ "name": "UNITED AIR LINES, INC. v. MAHIN, DIRECTOR OF DEPARTMENT OF REVENUE, et al.",
+"age":    117 
+} 
+] 
+},
+{
+ "name": "alien person subject to a denaturalization proceeding or one whose citizenship is revoked",
+"_children": [
+ {
+ "name": "In re GRIFFITHS",
+"age":    167 
+},
+{
+ "name": "HURTADO et al. v. UNITED STATES",
+"age":     47 
+} 
+] 
+},
+{
+ "name": "attorney or person acting as such ",
+"_children": [
+ {
+ "name": "NORTHCROSS et al. v. BOARD OF EDUCATION OF THE MEMPHIS CITY SCHOOLS et al.",
+"age": null 
+},
+{
+ "name": "AMERICAN TRIAL LAWYERS ASSN., NEW JERSEY BRANCH, et al. v. NEW JERSEY SUPREME COURT",
+"age": null 
+} 
+] 
+},
+{
+ "name": "bookstore newsstand printer bindery purveyor or distributor of books or magazines",
+"_children": [
+ {
+ "name": "EVCO, DBA EVCO INSTRUCTIONAL DESIGNS v. JONES, COMMISSIONER OF BUREAU OF REVENUE OF NEW MEXICO, et al.",
+"age":     26 
+},
+{
+ "name": "KAPLAN v. CALIFORNIA",
+"age":    245 
+} 
+] 
+},
+{
+ "name": "brewery distillery",
+"_children": [
+ {
+ "name": "HEUBLEIN, INC. v. SOUTH CAROLINA TAX COMMISSION",
+"age":     35 
+} 
+] 
+},
+{
+ "name": "broker stock exchange investment or securities firm",
+"_children": [
+ {
+ "name": "RICCI v. CHICAGO MERCANTILE EXCHANGE et al.",
+"age":     83 
+} 
+] 
+},
+{
+ "name": "buyer purchaser",
+"_children": [
+ {
+ "name": "MOURNING v. FAMILY PUBLICATIONS SERVICE, INC.",
+"age":    166 
+} 
+] 
+},
+{
+ "name": "child _children including adopted or illegitimate",
+"_children": [
+ {
+ "name": "MORRIS v. WEINBERGER, SECRETARY OF HEALTH, EDUCATION, AND WELFARE",
+"age":     36 
+},
+{
+ "name": "DOE et al. v. MCMILLAN et al.",
+"age":    167 
+},
+{
+ "name": "NEW JERSEY WELFARE RIGHTS ORGANIZATION et al. v. CAHILL, GOVERNOR OF NEW JERSEY, et al.",
+"age": null 
+},
+{
+ "name": "GOMEZ v. PEREZ",
+"age":     42 
+} 
+] 
+},
+{
+ "name": "city town township village or borough government or governmental unit",
+"_children": [
+ {
+ "name": "CITY OF BURBANK et al. v. LOCKHEED AIR TERMINAL, INC., et al.",
+"age":     83 
+},
+{
+ "name": "CITY OF KENOSHA et al. v. BRUNO et al.",
+"age":     54 
+} 
+] 
+},
+{
+ "name": "Civil Service Commission US",
+"_children": [
+ {
+ "name": "UNITED STATES CIVIL SERVICE COMMISSION et al. v. NATIONAL ASSOCIATION OF LETTER CARRIERS, AFL-CIO, et al.",
+"age":     91 
+} 
+] 
+},
+{
+ "name": "Comptroller of Currency",
+"_children": [
+ {
+ "name": "CAMP, COMPTROLLER OF THE CURRENCY v. PITTS et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "Department or Secretary of Agriculture",
+"_children": [
+ {
+ "name": "BUTZ, SECRETARY OF AGRICULTURE, et al. v. GLOVER LIVESTOCK COMMISSION CO., INC.",
+"age":     29 
+},
+{
+ "name": "UNITED STATES DEPARTMENT OF AGRICULTURE et al. v. MURRY et al.",
+"age":     63 
+},
+{
+ "name": "UNITED STATES DEPARTMENT OF AGRICULTURE et al. v. MORENO et al.",
+"age":     63 
+} 
+] 
+},
+{
+ "name": "Department or Secretary of Health Education and Welfare",
+"_children": [
+ {
+ "name": "WEINBERGER, SECRETARY OF HEALTH, EDUCATION, AND WELFARE, et al. v. HYNSON, WESTCOTT & DUNNING, INC.",
+"age":     62 
+},
+{
+ "name": "WEINBERGER, SECRETARY OF HEALTH, EDUCATION, AND WELFARE, et al. v. BENTEX PHARMACEUTICALS, INC., et al.",
+"age":     62 
+},
+{
+ "name": "RICHARDSON, SECRETARY OF HEALTH, EDUCATION, AND WELFARE v. MORRIS et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "Department or Secretary of Labor",
+"_children": [
+ {
+ "name": "BRENNAN, SECRETARY OF LABOR v. ARNHEIM & NEELY, INC., et al.",
+"age":     43 
+} 
+] 
+},
+{
+ "name": "disabled person or disability benefit claimant",
+"_children": [
+ {
+ "name": "PHILPOTT et al. v. ESSEX COUNTY WELFARE BOARD",
+"age":     37 
+},
+{
+ "name": "DILLARD v. INDUSTRIAL COMMISSION OF VIRGINIA et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "drug manufacturer",
+"_children": [
+ {
+ "name": "CIBA CORP. v. WEINBERGER, SECRETARY OF HEALTH, EDUCATION, AND WELFARE, et al.",
+"age":     62 
+},
+{
+ "name": "USV PHARMACEUTICAL CORP. v. WEINBERGER, SECRETARY OF HEALTH, EDUCATION, AND WELFARE, et al.",
+"age":     62 
+} 
+] 
+},
+{
+ "name": "electric or hydroelectric power utility power cooperative or gas and electric company",
+"_children": [
+ {
+ "name": "GULF STATES UTILITIES CO. v. FEDERAL POWER COMMISSION et al.",
+"age":    160 
+},
+{
+ "name": "OTTER TAIL POWER CO. v. UNITED STATES",
+"age":     79 
+} 
+] 
+},
+{
+ "name": "employee or job applicant including beneficiaries of",
+"_children": [
+ {
+ "name": "DEAN v. GADSDEN TIMES PUBLISHING CORP.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "employer If employers relations with employees are governed by the nature of the employers",
+"_children": [
+ {
+ "name": "MCDONNELL DOUGLAS CORP. v. GREEN",
+"age":     47 
+} 
+] 
+},
+{
+ "name": "Environmental Protection Agency or Administrator",
+"_children": [
+ {
+ "name": "FRI, ACTING ADMINISTRATOR, ENVIRONMENTAL PROTECTION AGENCY v. SIERRA CLUB et al.",
+"age":    180 
+},
+{
+ "name": "ENVIRONMENTAL PROTECTION AGENCY et al. v. MINK et al.",
+"age":     74 
+} 
+] 
+},
+{
+ "name": "Federal Maritime Commission",
+"_children": [
+ {
+ "name": "FEDERAL MARITIME COMMISSION v. SEATRAIN LINES, INC., et al.",
+"age":     54 
+} 
+] 
+},
+{
+ "name": "Federal Power Commission",
+"_children": [
+ {
+ "name": "FEDERAL POWER COMMISSION v. MEMPHIS LIGHT, GAS & WATER DIVISION et al.",
+"age":     41 
+} 
+] 
+},
+{
+ "name": "female",
+"_children": [
+ {
+ "name": "ROE et al. v. WADE, DISTRICT ATTORNEY OF DALLAS COUNTY",
+"age":    406 
+},
+{
+ "name": "DOE et al. v. BOLTON, ATTORNEY GENERAL OF GEORGIA, et al.",
+"age":    406 
+} 
+] 
+},
+{
+ "name": "governmental employee or job applicant",
+"_children": [
+ {
+ "name": "EMPLOYEES OF THE DEPARTMENT OF PUBLIC HEALTH AND WELFARE OF MISSOURI et al. v. DEPARTMENT OF PUBLIC HEALTH AND WELFARE OF MISSOURI et al.",
+"age":     93 
+},
+{
+ "name": "BROADRICK et al. v. OKLAHOMA et al.",
+"age":     91 
+} 
+] 
+},
+{
+ "name": "Indian including Indian tribe or nation",
+"_children": [
+ {
+ "name": "TONASKET v. WASHINGTON et al.",
+"age":    133 
+},
+{
+ "name": "KEEBLE v. UNITED STATES",
+"age":     63 
+},
+{
+ "name": "MATTZ v. ARNETT, DIRECTOR, DEPARTMENT OF FISH AND GAME",
+"age":     76 
+},
+{
+ "name": "MESCALERO APACHE TRIBE v. JONES, COMMISSIONER, BUREAU OF REVENUE OF NEW MEXICO, et al.",
+"age":    105 
+},
+{
+ "name": "MCCLANAHAN v. ARIZONA STATE TAX COMMISSION",
+"age":    105 
+} 
+] 
+},
+{
+ "name": "indigent needy welfare recipient",
+"_children": [
+ {
+ "name": "JOHNSON et al. v. NEW YORK STATE EDUCATION DEPARTMENT et al.",
+"age":     12 
+},
+{
+ "name": "ORTWEIN et al. v. SCHWAB et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "injured person or legal entity nonphysically and nonemployment related",
+"_children": [
+ {
+ "name": "COLGROVE v. BATTIN, U.S. DISTRICT JUDGE",
+"age":    155 
+} 
+] 
+},
+{
+ "name": "Interstate Commerce Commission",
+"_children": [
+ {
+ "name": "UNITED STATES et al. v. FLORIDA EAST COAST RAILWAY CO. et al.",
+"age":     46 
+},
+{
+ "name": "UNITED STATES et al. v. STUDENTS CHALLENGING REGULATORY AGENCY PROCEDURES (SCRAP) et al.",
+"age":    110 
+} 
+] 
+},
+{
+ "name": "judge",
+"_children": [
+ {
+ "name": "OHIO MUNICIPAL JUDGES ASSN. et al. v. DAVIS et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "local school district or board of education",
+"_children": [
+ {
+ "name": "SCHOOL BOARD OF CITY OF RICHMOND, VIRGINIA, et al. v. STATE BOARD OF EDUCATION OF VIRGINIA et al.",
+"age":     28 
+},
+{
+ "name": "SAN ANTONIO INDEPENDENT SCHOOL DISTRICT et al. v. RODRIGUEZ et al.",
+"age":    160 
+} 
+] 
+},
+{
+ "name": "magazine",
+"_children": [
+ {
+ "name": "ALEXANDER et al. v. VIRGINIA",
+"age":    249 
+} 
+] 
+},
+{
+ "name": "manufacturer",
+"_children": [
+ {
+ "name": "HUGHES TOOL CO. et al. v. TRANS WORLD AIRLINES, INC.",
+"age":     92 
+} 
+] 
+},
+{
+ "name": "military personnel or dependent of including reservist",
+"_children": [
+ {
+ "name": "GOSA v. MAYDEN, WARDEN",
+"age":    203 
+},
+{
+ "name": "FRONTIERO ET VIR v. RICHARDSON, SECRETARY OF DEFENSE, et al.",
+"age":    117 
+} 
+] 
+},
+{
+ "name": "mother",
+"_children": [
+ {
+ "name": "LINDA R. S. v. RICHARD D. et al.",
+"age":     89 
+} 
+] 
+},
+{
+ "name": "movie play pictorial representation theatrical production actor or exhibitor or distributor of",
+"_children": [
+ {
+ "name": "PARIS ADULT THEATRE I et al. v. SLATON, DISTRICT ATTORNEY, et al.",
+"age":    245 
+},
+{
+ "name": "ROADEN v. KENTUCKY",
+"age":    223 
+},
+{
+ "name": "HELLER v. NEW YORK",
+"age":    223 
+} 
+] 
+},
+{
+ "name": "National Labor Relations Board or regional office or officer",
+"_children": [
+ {
+ "name": "NATIONAL LABOR RELATIONS BOARD v. INTERNATIONAL VAN LINES",
+"age":     26 
+},
+{
+ "name": "NATIONAL LABOR RELATIONS BOARD v. BOEING CO. et al.",
+"age":     56 
+},
+{
+ "name": "NATIONAL LABOR RELATIONS BOARD v. GRANITE STATE JOINT BOARD, TEXTILE WORKERS UNION OF AMERICA, LOCAL 1029, AFL-CIO",
+"age":     24 
+} 
+] 
+},
+{
+ "name": "newspaper newsletter journal of opinion news service",
+"_children": [
+ {
+ "name": "PITTSBURGH PRESS CO. v. PITTSBURGH COMMISSION ON HUMAN RELATIONS et al.",
+"age":    111 
+} 
+] 
+},
+{
+ "name": "oil company or natural gas producer",
+"_children": [
+ {
+ "name": "TIDEWATER OIL CO. v. UNITED STATES et al.",
+"age":     50 
+} 
+] 
+},
+{
+ "name": "owner landlord or claimant to ownership fee interest or possession of land as well as chattels",
+"_children": [
+ {
+ "name": "ROBINSON v. HANRAHAN, STATES ATTORNEY OF COOK COUNTY",
+"age": null 
+},
+{
+ "name": "ONE LOT EMERALD CUT STONES AND ONE RING v. UNITED STATES",
+"age": null 
+} 
+] 
+},
+{
+ "name": "Patent Office or Commissioner of or Board of Appeals of",
+"_children": [
+ {
+ "name": "GOTTSCHALK, ACTING COMMISSIONER OF PATENTS v. BENSON et al.",
+"age":     35 
+} 
+] 
+},
+{
+ "name": "person accused indicted or suspected of crime",
+"_children": [
+ {
+ "name": "ERLENBAUGH et al. v. UNITED STATES",
+"age":     29 
+},
+{
+ "name": "BRONSTON v. UNITED STATES",
+"age":     56 
+},
+{
+ "name": "HAM v. SOUTH CAROLINA",
+"age":     72 
+},
+{
+ "name": "CHAMBERS v. MISSISSIPPI",
+"age":     98 
+},
+{
+ "name": "BRADEN v. 30TH JUDICIAL CIRCUIT COURT OF KENTUCKY",
+"age":     85 
+},
+{
+ "name": "BROWN et al. v. UNITED STATES",
+"age":    131 
+},
+{
+ "name": "PALMORE v. UNITED STATES",
+"age":     62 
+},
+{
+ "name": "GOLDSTEIN et al. v. CALIFORNIA",
+"age":    187 
+},
+{
+ "name": "ALMEIDA-SANCHEZ v. UNITED STATES",
+"age":     94 
+},
+{
+ "name": "WARD v. VILLAGE OF MONROEVILLE",
+"age":     28 
+},
+{
+ "name": "BARNES v. UNITED STATES",
+"age":     90 
+},
+{
+ "name": "TACON v. ARIZONA",
+"age":     43 
+},
+{
+ "name": "COOL v. UNITED STATES",
+"age": null 
+},
+{
+ "name": "WARDIUS v. OREGON",
+"age":    152 
+},
+{
+ "name": "WEBB v. TEXAS",
+"age": null 
+},
+{
+ "name": "STRUNK, AKA WAGNER v. UNITED STATES",
+"age":     48 
+} 
+] 
+},
+{
+ "name": "person convicted of crime",
+"_children": [
+ {
+ "name": "ROBINSON v. NEIL, WARDEN",
+"age":     41 
+},
+{
+ "name": "BRADLEY et al. v. UNITED STATES",
+"age":     56 
+},
+{
+ "name": "HENSLEY v. MUNICIPAL COURT, SAN JOSE-MILPITAS JUDICIAL DISTRICT, SANTA CLARA COUNTY",
+"age":     93 
+},
+{
+ "name": "GACA v. UNITED STATES",
+"age": null 
+},
+{
+ "name": "FONTAINE v. UNITED STATES",
+"age":     38 
+},
+{
+ "name": "CHAFFIN v. STYNCHCOMBE, SHERIFF",
+"age":     88 
+},
+{
+ "name": "DAVIS v. UNITED STATES",
+"age":     56 
+} 
+] 
+},
+{
+ "name": "physically injured person including wrongful death who is not an employee",
+"_children": [
+ {
+ "name": "MOOR et al. v. COUNTY OF ALAMEDA et al.",
+"age":     76 
+} 
+] 
+},
+{
+ "name": "political candidate activist committee party party member organization or elected official",
+"_children": [
+ {
+ "name": "GAFFNEY v. CUMMINGS et al.",
+"age":    112 
+},
+{
+ "name": "O'BRIEN et al. v. BROWN et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "prisoner inmate of penal institution",
+"_children": [
+ {
+ "name": "LOGUE et al. v. UNITED STATES",
+"age":     48 
+} 
+] 
+},
+{
+ "name": "probationer or parolee",
+"_children": [
+ {
+ "name": "DOUGLAS v. BUDER, JUDGE",
+"age": null 
+} 
+] 
+},
+{
+ "name": "racial or ethnic minority",
+"_children": [
+ {
+ "name": "NATIONAL ASSOCIATION FOR THE ADVANCEMENT OF COLORED PEOPLE, NEW YORK CITY REGION OF NEW YORK CONFERENCE OF BRANCHES, et al. v. NEW YORK et al.",
+"age":    114 
+},
+{
+ "name": "NORWOOD et al. v. HARRISON et al.",
+"age":    125 
+},
+{
+ "name": "KEYES et al. v. SCHOOL DISTRICT NO. 1, DENVER, COLORADO, et al.",
+"age":    252 
+},
+{
+ "name": "TILLMAN et al. v. WHEATON-HAVEN RECREATION ASSN., INC., et al.",
+"age":    104 
+} 
+] 
+},
+{
+ "name": "radio and television network except cable tv",
+"_children": [
+ {
+ "name": "COLUMBIA BROADCASTING SYSTEM, INC. v. DEMOCRATIC NATIONAL COMMITTEE",
+"age":    225 
+} 
+] 
+},
+{
+ "name": "railroad",
+"_children": [
+ {
+ "name": "ATCHISON, TOPEKA & SANTA FE RAILWAY CO. et al. v. WICHITA BOARD OF TRADE et al.",
+"age":    110 
+} 
+] 
+},
+{
+ "name": "shareholders to whom a tender offer is made",
+"_children": [
+ {
+ "name": "KERN COUNTY LAND CO. v. OCCIDENTAL PETROLEUM CORP.",
+"age":    153 
+} 
+] 
+},
+{
+ "name": "State",
+"_children": [
+ {
+ "name": "TEXAS v. LOUISIANA",
+"age":     99 
+},
+{
+ "name": "NEIL, WARDEN v. BIGGERS",
+"age":     49 
+},
+{
+ "name": "CADY, WARDEN v. DOMBROWSKI",
+"age":     92 
+},
+{
+ "name": "SLOAN, TREASURER OF PENNSYLVANIA, et al. v. LEMON et al.",
+"age":     70 
+},
+{
+ "name": "DEPARTMENT OF MOTOR VEHICLES OF CALIFORNIA v. RIOS",
+"age": null 
+},
+{
+ "name": "GAGNON, WARDEN v. SCARPELLI",
+"age":    125 
+},
+{
+ "name": "MICHIGAN v. OHIO",
+"age":     73 
+},
+{
+ "name": "ILLINOIS v. SOMERVILLE",
+"age":    106 
+},
+{
+ "name": "SWENSON, WARDEN v. STIDHAM",
+"age":     57 
+},
+{
+ "name": "LEHNHAUSEN, DIRECTOR, DEPARTMENT OF LOCAL GOVERNMENT AFFAIRS OF ILLINOIS v. LAKE SHORE AUTO PARTS CO. et al.",
+"age":     38 
+},
+{
+ "name": "OHIO v. KENTUCKY",
+"age":     54 
+},
+{
+ "name": "BROWN, SECRETARY OF STATE OF CALIFORNIA v. CHOTE",
+"age":     69 
+},
+{
+ "name": "CALIFORNIA v. KRIVDA et al.",
+"age":     14 
+},
+{
+ "name": "MAHAN, SECRETARY, STATE BOARD OF ELECTIONS, et al. v. HOWELL et al.",
+"age":     71 
+},
+{
+ "name": "SUGARMAN, ADMINISTRATOR, NEW YORK CITY HUMAN RESOURCES ADMINISTRATION, et al. v. DOUGALL et al.",
+"age":    168 
+},
+{
+ "name": "MARSTON et al. v. LEWIS et al.",
+"age": null 
+},
+{
+ "name": "ASKEW, GOVERNOR OF FLORIDA, et al. v. AMERICAN WATERWAYS OPERATORS, INC., et al.",
+"age":    155 
+},
+{
+ "name": "GIBSON et al. v. BERRYHILL et al.",
+"age":    118 
+},
+{
+ "name": "MURCH et al. v. MOTTRAM",
+"age": null 
+},
+{
+ "name": "SCHNECKLOTH, CONSERVATION CENTER SUPERINTENDENT v. BUSTAMONTE",
+"age":    231 
+},
+{
+ "name": "CALIFORNIA et al. v. LARUE et al.",
+"age":     56 
+},
+{
+ "name": "LAVALLEE, CORRECTIONAL SUPERINTENDENT v. DELLE ROSE",
+"age": null 
+},
+{
+ "name": "PREISER, CORRECTION COMMISSIONER, et al. v. RODRIGUEZ et al.",
+"age":    118 
+},
+{
+ "name": "GEORGIA et al. v. UNITED STATES",
+"age":     75 
+},
+{
+ "name": "CUPP, PENITENTIARY SUPERINTENDENT v. MURPHY",
+"age":     70 
+},
+{
+ "name": "MCGINNIS, COMMISSIONER OF CORRECTION, et al. v. ROYSTER et al.",
+"age":     72 
+},
+{
+ "name": "TOLLETT, WARDEN v. HENDERSON",
+"age":     56 
+},
+{
+ "name": "ILLINOIS v. MICHIGAN",
+"age": null 
+},
+{
+ "name": "MICHIGAN v. PAYNE",
+"age":     88 
+},
+{
+ "name": "WHITE, SECRETARY OF STATE OF TEXAS, et al. v. REGESTER et al.",
+"age":    112 
+},
+{
+ "name": "GILLIGAN, GOVERNOR OF OHIO, et al. v. MORGAN et al.",
+"age":     94 
+},
+{
+ "name": "NEBRASKA v. IOWA",
+"age": null 
+},
+{
+ "name": "DISTRICT OF COLUMBIA v. CARTER",
+"age":     65 
+},
+{
+ "name": "WHITE, SECRETARY OF STATE OF TEXAS v. WEISER et al.",
+"age":    112 
+},
+{
+ "name": "LEVITT, COMPTROLLER OF NEW YORK, et al. v. COMMITTEE FOR PUBLIC EDUCATION & RELIGIOUS LIBERTY et al.",
+"age":     98 
+} 
+] 
+},
+{
+ "name": "state college or university",
+"_children": [
+ {
+ "name": "VLANDIS v. KLINE et al.",
+"age":     83 
+} 
+] 
+},
+{
+ "name": "state department or agency",
+"_children": [
+ {
+ "name": "NEW YORK STATE DEPARTMENT OF SOCIAL SERVICES et al. v. DUBLINO et al.",
+"age":     65 
+} 
+] 
+},
+{
+ "name": "state or local governmental taxpayer or executor of the estate of",
+"_children": [
+ {
+ "name": "LEMON et al. v. KURTZMAN, SUPERINTENDENT OF PUBLIC INSTRUCTION OF PENNSYLVANIA, et al.",
+"age":    145 
+},
+{
+ "name": "HUNT v. MCNAIR, GOVERNOR OF SOUTH CAROLINA, et al.",
+"age":    124 
+},
+{
+ "name": "COMMITTEE FOR PUBLIC EDUCATION & RELIGIOUS LIBERTY et al. v. NYQUIST, COMMISSIONER OF EDUCATION OF NEW YORK, et al.",
+"age":     70 
+} 
+] 
+},
+{
+ "name": "student or applicant for admission to an educational institution",
+"_children": [
+ {
+ "name": "PAPISH v. BOARD OF CURATORS OF THE UNIVERSITY OF MISSOURI et al.",
+"age": null 
+} 
+] 
+},
+{
+ "name": "taxpayer or executor of taxpayers estate federal only",
+"_children": [
+ {
+ "name": "FAUSNER v. COMMISSIONER OF INTERNAL REVENUE",
+"age": null 
+} 
+] 
+},
+{
+ "name": "tenant or lessee",
+"_children": [
+ {
+ "name": "TRAFFICANTE et al. v. METROPOLITAN LIFE INSURANCE CO. et al.",
+"age":     30 
+},
+{
+ "name": "ALMOTA FARMERS ELEVATOR & WAREHOUSE CO. v. UNITED STATES",
+"age":     90 
+} 
+] 
+},
+{
+ "name": "unemployed person or unemployment compensation applicant or claimant",
+"_children": [
+ {
+ "name": "INDIANA EMPLOYMENT SECURITY DIVISION et al. v. BURNEY",
+"age":     41 
+} 
+] 
+},
+{
+ "name": "union labor organization or official of",
+"_children": [
+ {
+ "name": "HALL et al. v. COLE",
+"age":     61 
+},
+{
+ "name": "BOOSTER LODGE NO. 405, INTERNATIONAL ASSOCIATION OF MACHINISTS & AEROSPACE WORKERS, AFL-CIO v. NATIONAL LABOR RELATIONS BOARD et al.",
+"age":     56 
+} 
+] 
+},
+{
+ "name": "United States",
+"_children": [
+ {
+ "name": "UNITED STATES v. CARTWRIGHT, EXECUTOR",
+"age":    111 
+},
+{
+ "name": "UNITED STATES v. LOUISIANA et al. (LOUISIANA BOUNDARY CASE)",
+"age": null 
+},
+{
+ "name": "UNITED STATES v. MARA, AKA MARASOVICH",
+"age":     77 
+},
+{
+ "name": "UNITED STATES v. CHICAGO, BURLINGTON & QUINCY RAILROAD CO.",
+"age":     98 
+},
+{
+ "name": "UNITED STATES v. FULLER ET UX.",
+"age":     90 
+},
+{
+ "name": "UNITED STATES v. PENNSYLVANIA INDUSTRIAL CHEMICAL CORP.",
+"age":     48 
+},
+{
+ "name": "UNITED STATES v. KRAS",
+"age":     84 
+},
+{
+ "name": "UNITED STATES v. 12 200-FT. REELS OF SUPER 8MM. FILM et al. (PALADINI, CLAIMANT)",
+"age":    519 
+},
+{
+ "name": "UNITED STATES v. ORITO",
+"age":    519 
+},
+{
+ "name": "UNITED STATES v. ASH",
+"age":    162 
+},
+{
+ "name": "UNITED STATES v. GLAXO GROUP LTD. et al.",
+"age":     74 
+},
+{
+ "name": "UNITED STATES v. MASON, ADMINISTRATOR, et al.",
+"age":     47 
+},
+{
+ "name": "UNITED STATES v. FIRST NATIONAL BANCORPORATION, INC., et al.",
+"age":    135 
+},
+{
+ "name": "UNITED STATES v. INDRELUNAS",
+"age": null 
+},
+{
+ "name": "UNITED STATES v. JIM et al.",
+"age": null 
+},
+{
+ "name": "UNITED STATES v. NEVADA et al.",
+"age":     56 
+},
+{
+ "name": "UNITED STATES v. DIONISIO",
+"age":     77 
+},
+{
+ "name": "UNITED STATES v. STATE TAX COMMISSION OF MISSISSIPPI et al.",
+"age":     77 
+},
+{
+ "name": "UNITED STATES v. BISHOP",
+"age":    133 
+},
+{
+ "name": "UNITED STATES v. ENMONS et al.",
+"age":     80 
+},
+{
+ "name": "UNITED STATES v. BASYE et al.",
+"age":     78 
+},
+{
+ "name": "UNITED STATES v. LITTLE LAKE MISERE LAND CO., INC., et al.",
+"age":    154 
+},
+{
+ "name": "UNITED STATES v. CHANDLER et al.",
+"age": null 
+},
+{
+ "name": "UNITED STATES v. RUSSELL",
+"age":     56 
+},
+{
+ "name": "UNITED STATES v. FALSTAFF BREWING CORP. et al.",
+"age":    134 
+} 
+] 
+},
+{
+ "name": "voter prospective voter elector or nonelective official seeking reapportionment or redistricting ",
+"_children": [
+ {
+ "name": "ROSARIO et al. v. ROCKEFELLER, GOVERNOR OF NEW YORK, et al.",
+"age":     98 
+},
+{
+ "name": "BURNS et al. v. FORTSON, SECRETARY OF STATE OF GEORGIA, et al.",
+"age": null 
+},
+{
+ "name": "ASSOCIATED ENTERPRISES, INC., et al. v. TOLTEC WATERSHED IMPROVEMENT DISTRICT",
+"age":     71 
+},
+{
+ "name": "SALYER LAND CO. et al. v. TULARE LAKE BASIN WATER STORAGE DISTRICT",
+"age":     71 
+},
+{
+ "name": "GOOSBY et al. v. OSSER et al.",
+"age":     42 
+} 
+] 
+},
+{
+ "name": "water transportation stevedore",
+"_children": [
+ {
+ "name": "UNION OIL CO. OF CALIFORNIA v. THE SAN JACINTO et al.",
+"age":     49 
+} 
+] 
+} 
+] 
+}
