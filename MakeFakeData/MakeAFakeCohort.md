@@ -32,7 +32,7 @@ mos <- data.frame( m = seq.int( 1, 12, 1 ) )  # Months data frame
 p  <- invisible(curve(-sigmoid(x) , -6,6))    # Visualize the curve
 ```
 
-![](unnamed-chunk-1-1.png)<!-- -->
+![](/MakeAFakeCohort/1chrt.sigmoid.png)<!-- -->
 
 ## Create seasonal weights
 
@@ -135,13 +135,13 @@ suppressMessages(library(tidyverse))
 inspect_types(df) %>% show_plot()
 ```
 
-![](unnamed-chunk-4-1.png)<!-- -->
+![](/MakeAFakeCohort/3chrt.dfSummary.png)<!-- -->
 
 ``` r
 inspect_na(df) %>% show_plot()
 ```
 
-![](unnamed-chunk-4-2.png)<!-- -->
+![](/MakeAFakeCohort/2chrt.NA.png)<!-- -->
 
 # Quick Profile
 
