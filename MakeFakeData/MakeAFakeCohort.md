@@ -131,17 +131,14 @@ before using the fake data for any actual testing.
 suppressMessages(library(inspectdf))
 suppressMessages(library(tidyverse))
 
-
-inspect_types(df) %>% show_plot()
+#inspect_types(df) %>% show_plot()
 ```
-
-![](/MakeFakeData/MakeAFakeCohort/3chrt.dfSummary.png)<!-- -->
 
 ``` r
 inspect_na(df) %>% show_plot()
 ```
 
-![](/MakeAFakeCohort/2chrt.NA.png)<!-- -->
+![](/MakeFakeData/MakeAFakeCohort/2chrt.NA.png)<!-- -->
 
 # Quick Profile
 
