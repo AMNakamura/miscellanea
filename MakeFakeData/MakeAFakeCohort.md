@@ -135,7 +135,7 @@ suppressMessages(library(tidyverse))
 inspect_types(df) %>% show_plot()
 ```
 
-![](/MakeAFakeCohort/3chrt.dfSummary.png)<!-- -->
+![](/MakeFakeData/MakeAFakeCohort/3chrt.dfSummary.png)<!-- -->
 
 ``` r
 inspect_na(df) %>% show_plot()
@@ -159,8 +159,8 @@ print(dfSummary(df,
 webshot( "MkChrtDfSummary.html", "MkChrtDfSummary.png")
 ```
 
-![](unnamed-chunk-5-1.png)<!-- -->
-[Stats Snapshot](MkChrtDfSummary.png)
+![](/MakeFakeData/MakeAFakeCohort/3chrt.dfSummary.png)<!-- -->
+
 
 # References
 
