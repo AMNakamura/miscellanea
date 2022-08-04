@@ -83,13 +83,13 @@ suppressMessages(library(tidyverse))
 inspect_types(df) %>% show_plot()
 ```
 
-![](MakeAFakeSurvey1_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](/MakeFakeData/MakeFakeSurvey1/1srvy.varpie.png)<!-- -->
 
 ``` r
 inspect_na(df) %>% show_plot()
 ```
 
-![](MakeAFakeSurvey1_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
+![](/MakeFakeData/MakeFakeSurvey1/2srvyNA.png)<!-- -->
 
 # Customizing labels
 
@@ -134,7 +134,7 @@ label(df) = as.list(var.labels[match(names(df),names(var.labels))])
 
     ## Output file written: C:\Users\Kevin\Documents\RProjects\RGitHub\r\DataOps\MkSrvy1DfSummary.html
 
-![](MakeAFakeSurvey1_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/MakeFakeData/MakeFakeSurvey1/3srvy.dfSummary.png)<!-- -->
 
 # References
 
