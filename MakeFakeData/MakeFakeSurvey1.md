@@ -89,7 +89,7 @@ inspect_types(df) %>% show_plot()
 inspect_na(df) %>% show_plot()
 ```
 
-![](/MakeFakeData/MakeFakeSurvey1/2srvyNA.png)<!-- -->
+![](/MakeFakeData/MakeFakeSurvey1/2srvy.NA.png)<!-- -->
 
 # Customizing labels
 
