@@ -175,7 +175,7 @@ print(ggplot(df, aes(x=mo, y=members, group=cohort,color=cohort)) +
 }
 ```
 
-![](Retention2_LayerCakes_files/figure-gfm/cakes-1.png)<!-- -->![](Retention2_LayerCakes_files/figure-gfm/cakes-2.png)<!-- -->![](Retention2_LayerCakes_files/figure-gfm/cakes-3.png)<!-- -->![](Retention2_LayerCakes_files/figure-gfm/cakes-4.png)<!-- -->
+![](Retention2_LayerCakes/cakes-1.png)<!-- -->![](Retention2_LayerCakes/cakes-2.png)<!-- -->![](Retention2_LayerCakes/cakes-3.png)<!-- -->![](Retention2_LayerCakes/cakes-4.png)<!-- -->
 
 # 4 Packages
 
