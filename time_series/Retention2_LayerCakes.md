@@ -175,13 +175,10 @@ print(ggplot(df, aes(x=mo, y=members, group=cohort,color=cohort)) +
 }
 ```
 
-![](/Retention2_LayerCakes/cakes-1.png)<!-- -->
-
-![](/Retention2_LayerCakes/cakes-2.png)<!-- -->
-
-![](/Retention2_LayerCakes/cakes-3.png)<!-- -->
-
-![](/Retention2_LayerCakes/cakes-4.png)<!-- -->
+<img src="Retention2_LayerCakes/cakes-1.png" style="display: block; margin: auto;" />
+<img src="Retention2_LayerCakes/cakes-2.png" style="display: block; margin: auto;" />
+<img src="Retention2_LayerCakes/cakes-3.png" style="display: block; margin: auto;" />
+<img src="Retention2_LayerCakes/cakes-4.png" style="display: block; margin: auto;" />
 
 # 4 Packages
 
