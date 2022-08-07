@@ -1,0 +1,164 @@
+---
+title: "Make A Fake Cohort"
+author: "AMNakamura"
+date: "orig: 5/2/2014"
+output: github_document
+bibliography: packages.bib 
+---
+
+This program generates a sample cohort from user inputs, some sample categorical groups, and some seasonal terms for interest. Cohort members can enter and leave the cohort at any time and switch groups mid-way through.  
+
+
+```{r, warning=FALSE, message=FALSE}
+# Set bounds around the cohort years
+YrStart <- 2008
+YrEnd   <- 2013
+
+
+# Create some sample variables
+GRPS  <- c("GRP1","GRP2","GRP3","GRP4")  # Some groups
+GNDRS <- c("M","F","NB")                 # Some genders
+PGMS   <- c("PGM1","PGM2","PGM3")         # Some programs
+
+
+# Add some seasonal terms for interest 
+library(scales)
+library(e1071)
+
+
+options(scipen = 999)
+# The curve() function will create x and y coordinates for an S-curve.
+# Start high then end low for this run. 
+mos <- data.frame( m = seq.int( 1, 12, 1 ) )
+p  <- invisible(curve(-sigmoid(x) , -6,6))
+x  <- rescale(p$x, to = c(1, 12))
+y  <- rescale(p$y, to = c(0,1))
+mt <- predict( loess( y ~ x, span=.1 ), mos$m )
+```
+
+Let data set members 
+- Enter the cohort and leave the cohort at any time 
+- Change groups (e.g., classes) midway 
+
+```{r, warning=FALSE, message=FALSE}
+
+# Start with a list of IDs
+
+df0 <- data.frame(ID = seq(1:1000)) 
+
+# Create some columns                 
+GRP  <- sample(GRPS,  nrow(df0),replace=TRUE)  
+GNDR <- sample(GNDRS, nrow(df0),replace=TRUE) 
+PGM  <- sample(PGMS,   nrow(df0),replace=TRUE) 
+YR   <- sample(YrStart:YrEnd,nrow(df0),replace=TRUE)
+age  <- sample(18:45, nrow(df0),replace=TRUE)
+MO   <- sample(1:12,nrow(df0),replace=TRUE)
+
+               
+df1 <- cbind.data.frame(df0,GRP,GNDR,PGM,YR,MO,age)   
+
+```
+
+```{r, warning=FALSE, message=FALSE}
+
+suppressMessages(library(dplyr))
+
+# Create new rows for the years in the span
+n <- YrEnd - YrStart 
+
+df2 <- df1 %>%
+  slice(rep(seq_len(n()), each = n)) %>%  # Create up to 10 new rows
+  group_by(ID) %>% 
+  mutate_at(vars(YR,age), ~. + 0:(n - 1)) %>%   # increment year and age
+  filter(YR <= YrEnd) %>%
+  mutate(MO = ifelse(row_number() == 1,MO,1)) # Set the first month of subsequent years to 1
+
+# Create new rows for the possible months
+n <- 12 
+
+df3 <- df2 %>%
+  slice(rep(seq_len(n()), each = n)) %>%  # Create up to 12 new rows
+  group_by(ID,YR) %>% 
+  mutate_at(vars(MO), ~. + 0:(n - 1)) %>%   # increment month by 1
+  filter(MO <= 12)  
+
+# Select a sample of the cohort to switch groups and a sample to leave early.
+
+switches <- sample(df3$ID, floor(nrow(df3)/3)) 
+exits    <- sample(df3$ID, floor(nrow(df3)/10)) 
+
+df4 <- df3 %>%
+  group_by(ID) %>%
+  mutate(dt        = as.Date(paste(YR,MO,1, sep="-")),
+         dt.switch = sample(seq(min(as.Date(paste(YR,MO,1, sep="-"))),
+                     max(as.Date(paste(YR,MO,1, sep="-"))),
+                     by="month"),1),
+         dt.out =    as.Date(ifelse(ID %in% exits,
+                     sample(seq(min(as.Date(paste(YR,MO,1, sep="-"))),
+                     max(as.Date(paste(YR,MO,1, sep="-"))),
+                     by="month"),1),
+                     NA),origin="1970-01-01"),
+         GRP = ifelse(ID %in% switches & dt > dt.switch,
+                          sample(GRPS,1) ,as.character(GRP)))  %>%
+  filter(is.na(dt.out)|dt < dt.out ) %>%
+  ungroup() %>%
+  dplyr::select(-c(dt.switch,dt.out))
+
+# Create a column with some data generated from the other columns, with some random variation and a little seasonal impact
+df <- df4 %>%
+  mutate(ind1 =YR*MO*match(GRP,GRPS)*age*match(GNDR,GNDRS)*(mt[MO]*(match(GRP,GRPS)-1))/1000) %>%
+  rowwise() %>%
+  mutate(ind2 =rnorm(1,mean=5,sd=1)*match(GNDR,GNDRS)*match(PGM,PGMS)) %>%
+  mutate_if(is.numeric, round, digits=2) %>%
+  ungroup()
+
+rm(df0,df1,df2,df3,df4)
+
+```
+
+# Data Checks
+
+The following prints out quick data profiles to serve as sanity checks before using the fake data for any actual testing. 
+
+```{r, warning=FALSE, message=FALSE,results='asis'}
+
+suppressMessages(library(inspectdf))
+suppressMessages(library(tidyverse))
+
+
+inspect_types(df) %>% show_plot()
+inspect_na(df) %>% show_plot()
+
+```
+
+# Quick Profile
+
+```{r, warning=FALSE, message=FALSE,results='asis'}
+
+suppressMessages(library(summarytools))
+suppressMessages(library(webshot))
+
+
+print(dfSummary(df,
+                varnumbers = FALSE,
+                valid.col  = FALSE,
+                graph.magnif = 0.75), 
+      method = "browser", file = "MkChrtDfSummary.html")
+
+webshot( "MkChrtDfSummary.html", "MkChrtDfSummary.png")
+      
+```
+[Stats Snapshot](MkChrtDfSummary.png)
+
+```{r, message=FALSE,echo=FALSE}
+
+# Credit where credit due
+
+knitr::write_bib(c("dplyr","scales","e1071","inspectdf","Hmisc","summarytools","tidyverse"),file="packages.bib")
+```
+# References
+
+---
+nocite: '@*'
+---
+
