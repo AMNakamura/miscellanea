@@ -157,7 +157,7 @@ print(ggplot(plot.pct[[i]], aes(x = cohort_age, y = reorder(cohort, desc(cohort)
 }
 ```
 
-<img src="Retention1_GridsPlusRates/grids-1.png" style="display: block; margin: auto;" /><img src="Retention1_GridsPlusRates/grids-2.png" style="display: block; margin: auto;" /><img src="Retention1_GridsPlusRates/grids-3.png" style="display: block; margin: auto;" /><img src="Retention1_GridsPlusRates_files/grids-4.png" style="display: block; margin: auto;" />
+<img src="Retention1_GridsPlusRates/grids-1.png" style="display: block; margin: auto;" /><img src="Retention1_GridsPlusRates/grids-2.png" style="display: block; margin: auto;" /><img src="Retention1_GridsPlusRates/grids-3.png" style="display: block; margin: auto;" /><img src="Retention1_GridsPlusRates/grids-4.png" style="display: block; margin: auto;" />
 
 # 4 Calculating N-Period Retention Rates
 
