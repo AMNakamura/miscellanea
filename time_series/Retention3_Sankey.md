@@ -133,7 +133,7 @@ g_d3 <- igraph_to_networkD3(g)
 
 plot(g, vertex.size = node.stats$member.ttl/5, main = "Cohort Flow from Year to Year")
 ```
-<img src="Retention3_Sankey_files/flowplot-1.png" style="display: block; margin: auto;" />
+<img src="Retention3_Sankey/flowplot-1.png" style="display: block; margin: auto;" />
 
 ## 3.2 Sankey Diagram for Year to Year Changes
 
@@ -156,7 +156,7 @@ sankeyNetwork(g_d3$links, Nodes=g_d3$nodes,
               units ="members")
 ```
 
-<img src="Retention3_Sankey_files/snky-1.png" style="display: block; margin: auto;" />
+<img src="Retention3_Sankey/snky-1.png" style="display: block; margin: auto;" />
 
 ## 3.3 Network Graphs to Visualize Movement Between Groups
 
@@ -232,7 +232,7 @@ plot(network, layout=layout_components,
      main = "Flow of Members Between Groups\n Node size reflects median values for `ind`")
 ```
 
-<img src="Retention3_Sankey_files/network-1.png" style="display: block; margin: auto;" />
+<img src="Retention3_Sankey/network-1.png" style="display: block; margin: auto;" />
 
 ### 3.3.1 Alluvial Charts
 
@@ -283,7 +283,7 @@ ggplot(df.plot,
         legend.title=element_blank()) +
   theme_minimal()
 ```
-<img src="Retention3_Sankey_files/alluvial-1.png" style="display: block; margin: auto;" />
+<img src="Retention3_Sankey/alluvial-1.png" style="display: block; margin: auto;" />
 
 # 4 Packages
 
