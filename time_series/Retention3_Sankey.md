@@ -135,7 +135,7 @@ plot(g, vertex.size = node.stats$member.ttl/5, main = "Cohort Flow from Year to 
 ```
 
 ![Node size reflects relative cohort
-size](Retention3_Sankey_files/figure-gfm/flowplot-1.png)
+size](Retention3_Sankey_files/flowplot-1.png)
 
 ## 3.2 Sankey Diagram for Year to Year Changes
 
@@ -159,7 +159,7 @@ sankeyNetwork(g_d3$links, Nodes=g_d3$nodes,
 ```
 
 ![Node size reflects relative cohort
-size](Retention3_Sankey_files/figure-gfm/snky-1.png)
+size](Retention3_Sankey_files/snky-1.png)
 
 ## 3.3 Network Graphs to Visualize Movement Between Groups
 
@@ -236,7 +236,7 @@ plot(network, layout=layout_components,
 ```
 
 ![Node size reflects relative cohort
-size](Retention3_Sankey_files/figure-gfm/network-1.png)
+size](Retention3_Sankey_files/network-1.png)
 
 ### 3.3.1 Alluvial Charts
 
@@ -288,7 +288,7 @@ ggplot(df.plot,
   theme_minimal()
 ```
 
-![](Retention3_Sankey_files/figure-gfm/alluvial-1.png)<!-- -->
+![](Retention3_Sankey_files/alluvial-1.png)<!-- -->
 
 # 4 Packages
 
