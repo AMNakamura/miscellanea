@@ -305,4 +305,3 @@ Brunson JC (2017). “ggalluvial: Layered Grammar for Alluvial Plots.”
 *Journal of Open Source Software*, *5*(49), 2017. doi:
 10.21105/joss.02017 (URL: <https://doi.org/10.21105/joss.02017>).
 
-# 5 References
