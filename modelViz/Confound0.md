@@ -99,7 +99,7 @@ diagram = "digraph {
 ```
 
 <center>
-    <img src="Confound0/g2.png" style="display: block; margin: auto;" />
+    <img src="Confound0/g2.png" style="display: block; margin: auto; width='500' height='400'" />
 </center>
 
 # Graphing types of potential bias
@@ -206,7 +206,7 @@ label = 'Example'
 ```
 
 <center>
-    <img src="Confound0/g4.png" style="display: block; margin: auto;" />
+    <img src="Confound0/g4.png" style="display: block; margin: auto; width='600' height='600'" />
 </center>
 
 ## Moderation
