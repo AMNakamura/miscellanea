@@ -206,7 +206,7 @@ label = 'Example'
 ```
 
 <center>
-    <img src="Confound0/g4.png" style="display: block; margin: auto; width='1000' height='600'" />
+    <img src="Confound0/g4.png" style="display: block; margin: auto;" />
 </center>
 
 ## Moderation
