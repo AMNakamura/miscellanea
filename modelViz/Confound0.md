@@ -75,7 +75,7 @@ diagram = "digraph {
 ```
 
 <center>
-    <img src="Confound0/g1.png" style="display: block; margin: auto; width='300' height='200'" />
+[](g1.png)
 </center>
 
 ## Adding Attributes
@@ -99,7 +99,7 @@ diagram = "digraph {
 ```
 
 <center>
-    <img src="Confound0/g2.png" style="display: block; margin: auto; width='500' height='400'" />
+[](g2.png)
 </center>
 
 # Graphing types of potential bias
@@ -149,7 +149,7 @@ label = 'Example'
 ```
 
 <center>
-    <img src="Confound0/g3.png" style="display: block; margin: auto;" />
+[](g3.png)
 </center>
 
 ## Mediation
@@ -176,7 +176,7 @@ diagram = "digraph D {
            graph[layout = dot, rankdir = TB]  
 
 subgraph cluster0 {
-label = 'Relationship'
+label = 'Relationship '
            z
            x
            y
@@ -193,8 +193,8 @@ label = 'Example'
            subgraph {
            node [shape = none]
       
-           p [label= '\u26F1', fontsize=20]
-           s [label= '\u2619', fontsize=20]
+           p [label= 'Visit the park', fontsize=10]
+           s [label= 'Savor the \nexperience', fontsize=10, color='purple']
            h [label= '\U1F60A', fontsize=20]
            p -> s -> h [color='white']
 }
@@ -202,11 +202,11 @@ label = 'Example'
 
 }
 
-"),filename="g4.png")
+"),filename="g4.png",height=500,width=600)
 ```
 
 <center>
-    <img src="Confound0/g4.png" style="display: block; margin: auto;" />
+[](g4.png)
 </center>
 
 ## Moderation
@@ -262,7 +262,7 @@ label = 'Example'
 ```
 
 <center>
-    <img src="Confound0/g5.png" style="display: block; margin: auto;" />
+[](g5.png)
 </center>
 
 ## Collider
@@ -322,11 +322,11 @@ label='Relationship'
 
 }
 
-"),filename="g6.png")
+"),filename="g6.png",height=500,width=600)
 ```
 
 <center>
-    <img src="Confound0/g6.png" style="display: block; margin: auto;" />
+[](g6.png)
 </center>
 
 # Package Acknowledgements
