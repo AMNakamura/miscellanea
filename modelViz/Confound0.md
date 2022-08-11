@@ -327,7 +327,7 @@ label='Relationship'
 ```
 
 <center>
- <img src="Confound0/g6.png" style="display: block; margin: auto; " />
+ <img src="Confound0/g6.png" style="display: block; margin: auto;" />
 </center>
 
 # Package Acknowledgements
