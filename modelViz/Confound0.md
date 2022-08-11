@@ -75,7 +75,7 @@ diagram = "digraph {
 ```
 
 <center>
-    <img src="Confound0/g1.png" style="display: block; margin: auto;" />
+    <img src="Confound0/g1.png" style="display: block; margin: auto; width='300' height='200'" />
 </center>
 
 ## Adding Attributes
