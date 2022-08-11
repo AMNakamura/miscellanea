@@ -61,7 +61,7 @@ below:
 ## Basic graph
 
 <center>
-![](Confound0/g1.png)
+[](Confound0/g1.png)
 </center>
 
 ## Adding Attributes
