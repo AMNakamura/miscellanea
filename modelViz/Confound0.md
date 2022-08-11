@@ -17,7 +17,8 @@ A Nakamura
     -   <a href="#mediation" id="toc-mediation">Mediation</a>
     -   <a href="#moderation" id="toc-moderation">Moderation</a>
     -   <a href="#collider" id="toc-collider">Collider</a>
--   <a href="#packages" id="toc-packages">PackageS</a>
+-   <a href="#package-acknowledgements"
+    id="toc-package-acknowledgements">Package Acknowledgements</a>
 
 # Use Case
 
@@ -60,8 +61,21 @@ below:
 
 ## Basic graph
 
+``` r
+library(DiagrammeR)
+library(vtree)
+
+grVizToPNG(DiagrammeR::grViz(
+diagram = "digraph {
+           graph[layout = dot, rankdir = LR]
+           x
+           y
+           x -> y
+}"), height=150, filename="g1.png")
+```
+
 <center>
-[](Confound0/g1.png)
+![](g1.png)
 </center>
 
 ## Adding Attributes
@@ -72,6 +86,17 @@ Line breaks can be inserted by indicating a newline (`\n`). The example
 below describes a hypothetical relationship between system documentation
 and system data quality, with some attributes to illustrate the DOT
 grammar.
+
+``` r
+grVizToPNG(DiagrammeR::grViz(
+diagram = "digraph {
+           graph[layout = dot, rankdir = LR]
+           x[label = 'x\n(documentation)', shape= folder, color='darkgreen',  style = filled, fillcolor='lightblue']
+           y[label = 'y\n(data quality)',   shape= cylinder,color='darkgrey']
+           w[label = 'some other \n unmeasured factor', color='lightgrey']
+           x -> y [color = 'blue', arrowhead = curve]
+}"),height=400,filename="g2.png")
+```
 
 <center>
 [](g2.png)
@@ -95,6 +120,34 @@ level disappears.
 If you don’t control for a confounder, you’re likely to over or
 under-report the strength of the impact of x on y.
 
+``` r
+grVizToPNG(DiagrammeR::grViz(
+diagram = "digraph {
+           graph[layout = dot, rankdir = TB]  
+
+subgraph cluster1 {
+label = 'Relationship'
+           z
+           x
+           y
+           z -> x
+           z -> y
+}
+
+subgraph cluster2 {
+label = 'Example'
+           age [label = 'age \u231B']
+           shoe[label = 'Shoe size \U1F463']
+           reading[label='reading level \U1F56E ']
+           age -> shoe
+           age -> reading
+}
+
+}
+
+"),height=400,filename="g3.png")
+```
+
 <center>
 [](g3.png)
 </center>
@@ -117,6 +170,41 @@ In this example, deciding to visit a park (predictor) prompts savoring
 behavior (mediator) in some, which causes relaxation or other positive
 reaction (response).
 
+``` r
+grVizToPNG(DiagrammeR::grViz(
+diagram = "digraph D {
+           graph[layout = dot, rankdir = TB]  
+
+subgraph cluster0 {
+label = 'Relationship'
+           z
+           x
+           y
+           z -> x -> y
+}
+
+subgraph cluster1 {
+label = 'Example'
+           park
+           savor
+           happiness
+           park -> savor -> happiness
+           
+           subgraph {
+           node [shape = none]
+      
+           p [label= '\u26F1', fontsize=20]
+           s [label= '\u2619', fontsize=20]
+           h [label= '\U1F60A', fontsize=20]
+           p -> s -> h [color='white']
+}
+}
+
+}
+
+"),filename="g4.png")
+```
+
 <center>
 [](g4.png)
 </center>
@@ -138,6 +226,40 @@ misreporting (e.g., results for the study group could be very different
 from results from a broader population or different timeframe).
 
 Hacky visualization, using an invisible node, below.
+
+``` r
+grVizToPNG(DiagrammeR::grViz(
+diagram = "digraph {
+           graph[layout = dot, rankdir = TB] 
+           newrank=true
+
+subgraph cluster2 {
+label = 'Relationship'
+
+           emid2 [label='', shape=none, height=0, width=0]
+           x -> emid2 [arrowhead = none]
+           z -> emid2
+           emid2 -> y 
+           
+{rank=same;x,y,emid2}
+}
+
+subgraph cluster1 {
+label = 'Example'
+
+           emid1[label='', shape=none, height=0, width=0]
+           learning
+           satire -> emid1
+           perspective -> emid1 [arrowhead = none]
+           emid1 -> learning 
+           
+{rank=same;satire,learning,emid1}
+}
+
+}
+
+"),height=400,filename="g5.png")
+```
 
 <center>
 [](g5.png)
@@ -171,11 +293,43 @@ method](https://biostat.app.vumc.org/wiki/pub/Main/ContinuingEdu/CTSaunders_Caus
 An approach to graphing the “Smoking-Birthweight Paradox” in DiagrammeR
 appears below.
 
+``` r
+grVizToPNG(DiagrammeR::grViz(
+diagram = "digraph {
+           graph[layout = dot, rankdir = TB]
+center=true;
+
+subgraph cluster1 {
+label='Relationship'
+           z [shape=doubleoctagon]
+           z -> y
+           w -> z
+           x -> z
+           x -> y
+           w -> y
+}
+
+ subgraph cluster2 {
+ 
+ label='Example'
+           lbwt [shape=doubleoctagon]
+           lbwt -> mortality
+           birthdefect -> lbwt
+           smoking -> lbwt
+           smoking ->mortality
+           birthdefect -> mortality
+ }
+
+}
+
+"),filename="g6.png")
+```
+
 <center>
 [](g6.png)
 </center>
 
-# PackageS
+# Package Acknowledgements
 
 Iannone R (2022). *DiagrammeR: Graph/Network Visualization*. R package
 version 1.0.9, <https://CRAN.R-project.org/package=DiagrammeR>.
@@ -183,6 +337,3 @@ version 1.0.9, <https://CRAN.R-project.org/package=DiagrammeR>.
 Barrowman N (2021) *vtree: Display Information About Nested Subsets of a
 Data Frame*. R package version 5.4.6,
 <https://CRAN.R-project.org/package=vtree>.
-
-One bias not discussed above is omitted variable bias (i.e. no
-adjustment for crucial confounding variables).
