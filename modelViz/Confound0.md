@@ -75,7 +75,7 @@ diagram = "digraph {
 ```
 
 <center>
-[](g1.png)
+ <img src="Confound0/g1.png" style="display: block; margin: auto; " />
 </center>
 
 ## Adding Attributes
@@ -99,7 +99,8 @@ diagram = "digraph {
 ```
 
 <center>
-[](g2.png)
+
+ <img src="Confound0/g2.png" style="display: block; margin: auto; " />
 </center>
 
 # Graphing types of potential bias
@@ -149,7 +150,7 @@ label = 'Example'
 ```
 
 <center>
-[](g3.png)
+ <img src="Confound0/g3.png" style="display: block; margin: auto; " />
 </center>
 
 ## Mediation
@@ -206,7 +207,7 @@ label = 'Example'
 ```
 
 <center>
-[](g4.png)
+ <img src="Confound0/g4.png" style="display: block; margin: auto; " />
 </center>
 
 ## Moderation
@@ -262,7 +263,7 @@ label = 'Example'
 ```
 
 <center>
-[](g5.png)
+ <img src="Confound0/g5.png" style="display: block; margin: auto; " />
 </center>
 
 ## Collider
@@ -326,7 +327,7 @@ label='Relationship'
 ```
 
 <center>
-[](g6.png)
+ <img src="Confound0/g6.png" style="display: block; margin: auto; " />
 </center>
 
 # Package Acknowledgements
