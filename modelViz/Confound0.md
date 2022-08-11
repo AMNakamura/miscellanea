@@ -1,7 +1,7 @@
 Conceptual Model Visualization
 ================
 A Nakamura
-6/12/2016 (update 4/15/2019)
+(update 5/15/2022 to add vtree)
 
 -   <a href="#use-case" id="toc-use-case">Use Case</a>
 -   <a href="#graphviz" id="toc-graphviz">GraphViz</a>
@@ -17,6 +17,7 @@ A Nakamura
     -   <a href="#mediation" id="toc-mediation">Mediation</a>
     -   <a href="#moderation" id="toc-moderation">Moderation</a>
     -   <a href="#collider" id="toc-collider">Collider</a>
+-   <a href="#packages" id="toc-packages">PackageS</a>
 
 # Use Case
 
@@ -60,8 +61,7 @@ below:
 ## Basic graph
 
 <center>
-<div id="htmlwidget-565fb98d1f9f3e27e2ce" style="width:672px;height:150px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-565fb98d1f9f3e27e2ce">{"x":{"diagram":"digraph {\n           graph[layout = dot, rankdir = LR]\n           x\n           y\n           x -> y\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+![](g1.png)
 </center>
 
 ## Adding Attributes
@@ -74,8 +74,7 @@ and system data quality, with some attributes to illustrate the DOT
 grammar.
 
 <center>
-<div id="htmlwidget-4737d2c6e419682ede03" style="width:672px;height:400px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4737d2c6e419682ede03">{"x":{"diagram":"digraph {\n           graph[layout = dot, rankdir = LR]\n           x[label = \"x\n(documentation)\", shape= folder, color=\"darkgreen\",  style = filled, fillcolor=\"lightblue\"]\n           y[label = \"y\n(data quality)\",   shape= cylinder,color=\"darkgrey\"]\n           w[label = \"some other \n unmeasured factor\", color=\"lightgrey\"]\n           x -> y [color = \"blue\", arrowhead = curve]\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+[](g2.png)
 </center>
 
 # Graphing types of potential bias
@@ -97,8 +96,7 @@ If you don’t control for a confounder, you’re likely to over or
 under-report the strength of the impact of x on y.
 
 <center>
-<div id="htmlwidget-55e4e388489c2dd1450c" style="width:672px;height:400px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-55e4e388489c2dd1450c">{"x":{"diagram":"digraph {\n           graph[layout = dot, rankdir = TB]  \n\nsubgraph cluster1 {\nlabel = \"Relationship\"\n           z\n           x\n           y\n           z -> x\n           z -> y\n}\n\nsubgraph cluster2 {\nlabel = \"Example\"\n           age [label = \"age ⌛\"]\n           shoe[label = \"Shoe size 👣\"]\n           reading[label=\"reading level 🕮 \"]\n           age -> shoe\n           age -> reading\n}\n\n}\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+[](g3.png)
 </center>
 
 ## Mediation
@@ -120,8 +118,7 @@ behavior (mediator) in some, which causes relaxation or other positive
 reaction (response).
 
 <center>
-<div id="htmlwidget-33736fff0830f6e64df9" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-33736fff0830f6e64df9">{"x":{"diagram":"digraph D {\n           graph[layout = dot, rankdir = TB]  \n\nsubgraph cluster0 {\nlabel = \"Relationship\"\n           z\n           x\n           y\n           z -> x -> y\n}\n\nsubgraph cluster1 {\nlabel = \"Example\"\n           park\n           savor\n           happiness\n           park -> savor -> happiness\n           \n           subgraph {\n           node [shape = none]\n      \n           p [label= \"⛱\", fontsize=20]\n           s [label= \"☙\", fontsize=20]\n           h [label= \"😊\", fontsize=20]\n           p -> s -> h [color=\"white\"]\n}\n}\n\n}\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+[](g4.png)
 </center>
 
 ## Moderation
@@ -143,8 +140,7 @@ from results from a broader population or different timeframe).
 Hacky visualization, using an invisible node, below.
 
 <center>
-<div id="htmlwidget-e3b017edd6b782cf5013" style="width:672px;height:400px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e3b017edd6b782cf5013">{"x":{"diagram":"digraph {\n           graph[layout = dot, rankdir = TB] \n           newrank=true\n\nsubgraph cluster2 {\nlabel = \"Relationship\"\n\n           emid2 [label=\"\", shape=none, height=0, width=0]\n           x -> emid2 [arrowhead = none]\n           z -> emid2\n           emid2 -> y \n           \n{rank=same;x,y,emid2}\n}\n\nsubgraph cluster1 {\nlabel = \"Example\"\n\n           emid1[label=\"\", shape=none, height=0, width=0]\n           learning\n           satire -> emid1\n           perspective -> emid1 [arrowhead = none]\n           emid1 -> learning \n           \n{rank=same;satire,learning,emid1}\n}\n\n}\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+[](g5.png)
 </center>
 
 ## Collider
@@ -176,9 +172,17 @@ An approach to graphing the “Smoking-Birthweight Paradox” in DiagrammeR
 appears below.
 
 <center>
-<div id="htmlwidget-ad239312c5baac0934e9" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ad239312c5baac0934e9">{"x":{"diagram":"digraph {\n           graph[layout = dot, rankdir = TB]\ncenter=true;\n\nsubgraph cluster1 {\nlabel=\"Relationship\"\n           z [shape=doubleoctagon]\n           z -> y\n           w -> z\n           x -> z\n           x -> y\n           w -> y\n}\n\n subgraph cluster2 {\n \n label=\"Example\"\n           lbwt [shape=doubleoctagon]\n           lbwt -> mortality\n           birthdefect -> lbwt\n           smoking -> lbwt\n           smoking ->mortality\n           birthdefect -> mortality\n }\n\n}\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+[](g6.png)
 </center>
+
+# PackageS
+
+Iannone R (2022). *DiagrammeR: Graph/Network Visualization*. R package
+version 1.0.9, <https://CRAN.R-project.org/package=DiagrammeR>.
+
+Barrowman N (2021) *vtree: Display Information About Nested Subsets of a
+Data Frame*. R package version 5.4.6,
+<https://CRAN.R-project.org/package=vtree>.
 
 One bias not discussed above is omitted variable bias (i.e. no
 adjustment for crucial confounding variables).
