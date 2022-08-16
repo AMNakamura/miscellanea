@@ -2,3 +2,4 @@
 *.cls linguist-vendored
 *.Rmd  linguist-detectable
 *.RMD linguist-detectable
+*.[Rr]md linguist-detectable=true
