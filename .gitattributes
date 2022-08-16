@@ -1,5 +1,4 @@
 *.tex linguist-vendored
 *.cls linguist-vendored
-*.Rmd  linguist-detectable
-*.RMD linguist-detectable
 *.[Rr]md linguist-detectable=true
+*.RMD linguist-detectable =true
