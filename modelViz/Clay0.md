@@ -145,8 +145,9 @@ inspect_na(db0) %>% show_plot() +
  theme(axis.text.x=element_text(angle=90,hjust=1)) + # override the default angle in theme_minimal.
   scale_fill_manual(values=ramp1(33)) 
 ```
-
-<img src="Clay0_files/figure-gfm/plotna-1.png" style="display: block; margin: auto;" />
+<center>
+<img src="Clay0/plotna-1.png" style="display: block; margin: auto;" />
+</center>
 
 ``` r
 z <- inspect_na(db0) %>%
@@ -163,8 +164,9 @@ inspect_types(db1) %>% show_plot()+
  
 scale_fill_manual(values=ramp1(3)) 
 ```
-
-<img src="Clay0_files/figure-gfm/inspectTypes-1.png" style="display: block; margin: auto;" />
+<center>
+<img src="Clay0/inspectTypes-1.png" style="display: block; margin: auto;" />
+</center>
 
 ## 3.3 Pairwise correlations
 
@@ -211,8 +213,9 @@ cpairs(db.n,                    # Data frame with numerics
        oma=c(.5,1,1.5,15))   
   legend("topright", fill = unique(db.f$soil), legend = c( levels(db.f$soil)),cex=.7,inset = c(-.01,.01),box.col='white')
 ```
-
-<img src="Clay0_files/figure-gfm/corgraph-1.png" style="display: block; margin: auto;" />
+<center>
+<img src="Clay0/corgraph-1.png" style="display: block; margin: auto;" />
+</center>
 
 ## 3.4 Variable spread and distribution checks
 
@@ -251,8 +254,9 @@ p8 <- plot.hist(compression)
 p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 +
   plot_layout(ncol=3)
 ```
-
-<img src="Clay0_files/figure-gfm/histos-1.png" style="display: block; margin: auto;" />
+<center>
+<img src="Clay0/histos-1.png" style="display: block; margin: auto;" />
+</center>
 
 ``` r
 ## Compression is right skewed. Try a square root transformation to
@@ -263,8 +267,9 @@ p9 <- plot.hist(compression.sqrt)
 
 p8 + p9
 ```
-
-<img src="Clay0_files/figure-gfm/histos-2.png" style="display: block; margin: auto;" />
+<center>
+<img src="Clay0/histos-2.png" style="display: block; margin: auto;" />
+</center>
 
 ``` r
 db.t <- db.n %>% dplyr::select(-compression)
@@ -357,8 +362,9 @@ path1 <- semPaths(fit1, 'std', layout = 'tree2',
                   sizeMan=10,nCharNodes = 0, nCharEdges = 0,
                   color = c('lightblue','white','white','white','white','white'))
 ```
-
-<img src="Clay0_files/figure-gfm/paths-1.png" style="display: block; margin: auto;" />
+<center>
+<img src="Clay0/paths-1.png" style="display: block; margin: auto;" />
+</center>
 
 ``` r
 path1.1 <- change_node_label(path1,
