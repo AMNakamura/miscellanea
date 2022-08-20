@@ -254,7 +254,7 @@ dev.off()
 ```
 
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/check_model.png" style="display: block; margin: auto;" />
 </center>
 
 The following checks for independence of residuals.
