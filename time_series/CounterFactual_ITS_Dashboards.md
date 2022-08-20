@@ -161,8 +161,9 @@ wrap_plots(season.p) + plot_annotation(
   caption = 'Source: FakeCohort1'
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") 
 ```
+
 <center>
-<img src="CounterFactual_ITS_Dashboards/seasonals-1.png" style="display: block; margin: auto;" />
+<img src="Counterfactual_ITS_Dashboards/seasonals-1.png" style="display: block; margin: auto;" />
 </center>
 
 ``` r
