@@ -327,7 +327,7 @@ invisible(gtsave(tmp,"modelcompare1.png"))
 ```
 
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare1.png" width="500" height="500" />
 </center>
 
 The following runs an anova() test to see if the more complex model(s)
@@ -358,11 +358,11 @@ models.df <- as.data.frame(do.call(rbind, lapply(models, as.data.frame))) %>%
     footnote = " + p ~ .1, * p <=.05, ** p<=.01, *** p<=0.001",
     locations =  cells_title(groups="title"))
 
-invisible(gtsave(tmp,"modelcompare2.png"))
+invisible(gtsave(models.df,"modelcompare2.png"))
 ```
 
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare2.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare2.png" width="800" height="400" />
 </center>
 
 
@@ -386,7 +386,7 @@ tmp <- modelsummary(mod.gls1, output="gt",
 invisible(gtsave(tmp,"modelfinal.png"))
 ```
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelfinal.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelfinal.png" width="500" height="500" />
 </center>
 
 
