@@ -195,7 +195,7 @@ tcomp.p2 <- forecast::autoplot(tcomp2, main="Decomposition \nAfter Differencing"
 z <- wrap_plots(tcomp.p1,tcomp.p2) + coint_png & theme_minimal()
 ```
 <center>
-<img src="gls_Scaled0/CaptureDecomps.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/CaptureDecomps.PNG" style="display: block; margin: auto;" />
 </center>
 
 The following example uses fourier series,
@@ -251,8 +251,9 @@ png(filename="check_model.png",width = 600, height = 600)
 check_model(mod.lm,verbose=FALSE)
 dev.off()
 ```
+
 <center>
-<img src="gls_Scaled0/check_model.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/check_model1.png" style="display: block; margin: auto;" />
 </center>
 
 The following checks for independence of residuals.
@@ -282,7 +283,7 @@ p.res/wrap_plots(p.acf,p.pacf) + plot_annotation(
   caption = paste0("Durbin-Watson test: p =", round(dw$p.value,4))) & theme_minimal()
 ```
 <center>
-<img src="gls_Scaled0/autocor_patch-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/autocor_patch-1.png" style="display: block; margin: auto;" />
 </center>
 
 # 4 OLS vs GLS Model Comparisons
@@ -323,8 +324,9 @@ tmp<- modelsummary(models, output="gt",
 
 invisible(gtsave(tmp,"modelcompare1.png"))
 ```
+
 <center>
-<img src="gls_Scaled0/modelcompare1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare1.png" style="display: block; margin: auto;" />
 </center>
 
 The following runs an anova() test to see if the more complex model(s)
@@ -359,7 +361,7 @@ invisible(gtsave(tmp,"modelcompare2.png"))
 ```
 
 <center>
-<img src="gls_Scaled0/modelcompare2.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare2.png" style="display: block; margin: auto;" />
 </center>
 
 
@@ -382,9 +384,8 @@ tmp <- modelsummary(mod.gls1, output="gt",
 
 invisible(gtsave(tmp,"modelfinal.png"))
 ```
-
 <center>
-<img src="gls_Scaled0/modelfinal.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelfinal.png" style="display: block; margin: auto;" />
 </center>
 
 
