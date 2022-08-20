@@ -109,8 +109,9 @@ library(patchwork)
 
 wrap_plots(plots) & theme_minimal()
 ```
-
+<center>
 <img src="gls_Scaled0/tsplots-1.png" style="display: block; margin: auto;" />
+</center>
 
 # 3 Data Preparation
 
@@ -195,7 +196,7 @@ tcomp.p2 <- forecast::autoplot(tcomp2, main="Decomposition \nAfter Differencing"
 z <- wrap_plots(tcomp.p1,tcomp.p2) + coint_png & theme_minimal()
 ```
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/CaptureDecomps.PNG" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/CaptureDecomps.PNG" style="display: block; margin: auto;width="600" height="600"" />
 </center>
 
 The following example uses fourier series,
@@ -253,7 +254,7 @@ dev.off()
 ```
 
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/check_model1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 </center>
 
 The following checks for independence of residuals.
