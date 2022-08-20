@@ -110,7 +110,7 @@ library(patchwork)
 wrap_plots(plots) & theme_minimal()
 ```
 
-<img src="GLS_Scaled0_files/figure-gfm/tsplots-1.png" style="display: block; margin: auto;" />
+<img src="gls_Scaled0/tsplots-1.png" style="display: block; margin: auto;" />
 
 # 3 Data Preparation
 
@@ -194,8 +194,11 @@ tcomp.p2 <- forecast::autoplot(tcomp2, main="Decomposition \nAfter Differencing"
 
 z <- wrap_plots(tcomp.p1,tcomp.p2) + coint_png & theme_minimal()
 ```
+<center>
+<img src="gls_Scaled0/CaptureDecomps.png" style="display: block; margin: auto;" />
+</center>
 
-![](CaptureDecomps.png) The following example uses fourier series,
+The following example uses fourier series,
 instead of dummies, to account for seasonality and to reduce the number
 of regression terms added to the model.
 
@@ -248,14 +251,8 @@ png(filename="check_model.png",width = 600, height = 600)
 check_model(mod.lm,verbose=FALSE)
 dev.off()
 ```
-
-    png 
-      2 
-
 <center>
-
-![](check_model.png)
-
+<img src="gls_Scaled0/check_model.png" style="display: block; margin: auto;" />
 </center>
 
 The following checks for independence of residuals.
@@ -284,8 +281,9 @@ p.res/wrap_plots(p.acf,p.pacf) + plot_annotation(
   title = "Residuals check, autocorrelation, partial autocorrelation",
   caption = paste0("Durbin-Watson test: p =", round(dw$p.value,4))) & theme_minimal()
 ```
-
-![](GLS_Scaled0_files/figure-gfm/autocor_patch-1.png)<!-- -->
+<center>
+<img src="gls_Scaled0/autocor_patch-1.png" style="display: block; margin: auto;" />
+</center>
 
 # 4 OLS vs GLS Model Comparisons
 
@@ -325,8 +323,9 @@ tmp<- modelsummary(models, output="gt",
 
 invisible(gtsave(tmp,"modelcompare1.png"))
 ```
-
-![](modelcompare1.png)
+<center>
+<img src="gls_Scaled0/modelcompare1.png" style="display: block; margin: auto;" />
+</center>
 
 The following runs an anova() test to see if the more complex model(s)
 is/are better than the simpler model(s). Use lists, as needed, flatten
@@ -360,10 +359,9 @@ invisible(gtsave(tmp,"modelcompare2.png"))
 ```
 
 <center>
-
-![](modelcompare1.png)
-
+<img src="gls_Scaled0/modelcompare2.png" style="display: block; margin: auto;" />
 </center>
+
 
 # 5 Summary Table
 
@@ -386,10 +384,9 @@ invisible(gtsave(tmp,"modelfinal.png"))
 ```
 
 <center>
-
-![](modelfinal.png)
-
+<img src="gls_Scaled0/modelfinal.png" style="display: block; margin: auto;" />
 </center>
+
 
 # 6 Software acknowledgements (Most recent updates)
 
