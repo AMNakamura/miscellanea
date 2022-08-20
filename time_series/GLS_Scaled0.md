@@ -358,11 +358,11 @@ models.df <- as.data.frame(do.call(rbind, lapply(models, as.data.frame))) %>%
     footnote = " + p ~ .1, * p <=.05, ** p<=.01, *** p<=0.001",
     locations =  cells_title(groups="title"))
 
-invisible(gtsave(models.df,"modelcompare2.png"))
+invisible(gtsave(models.df,"ANOVA1.png"))
 ```
 
 <center>
-<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/modelcompare2.png" width="800" height="400" />
+<img src="https://github.com/AMNakamura/miscellanea/blob/master/time_series/gls_Scaled0/ANOVA1.png" width="800" height="400" />
 </center>
 
 
