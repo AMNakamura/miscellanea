@@ -161,8 +161,9 @@ wrap_plots(season.p) + plot_annotation(
   caption = 'Source: FakeCohort1'
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") 
 ```
-
-![](CounterFactual_ITS_Dashboards/seasonals-1.png)<!-- -->
+<center>
+<img src="CounterFactual_ITS_Dashboards/seasonals-1.png" style="display: block; margin: auto;" />
+</center>
 
 ``` r
 wrap_plots(decomp.p) + plot_annotation(
@@ -170,8 +171,10 @@ wrap_plots(decomp.p) + plot_annotation(
   caption = 'Source: FakeCohort1'
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") 
 ```
+<center>
+<img src="CounterFactual_ITS_Dashboards/decomps-1.png" style="display: block; margin: auto;" />
+</center>
 
-![](CounterFactual_ITS_Dashboards/decomps-1.png)<!-- -->
 
 # Model build
 
@@ -222,8 +225,9 @@ wrap_plots(i.plot) +  plot_layout(ncol = 2) + plot_annotation(
   subtitle = glue::glue("Date when things changed: {i.dt0}"),
   caption = "Controlling for ct") & theme_minimal()
 ```
-
-![](CounterFactual_ITS_Dashboards/iplots-1.png)<!-- -->
+<center>
+<img src="CounterFactual_ITS_Dashboards/iplots-1.png" style="display: block; margin: auto;" />
+</center>
 
 # Software Acknowledgements
 
