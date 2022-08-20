@@ -109,7 +109,7 @@ library(patchwork)
 wrap_plots(plots) & theme_minimal()
 ```
 
-![](GLS_Scaled0_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](GLS_Scaled0/unnamed-chunk-2-1.png)<!-- -->
 
 # 3 Data Preparation
 
@@ -192,7 +192,7 @@ tcomp.p2 <- forecast::autoplot(tcomp2, main="Decomposition \nAfter Differencing"
 wrap_plots(tcomp.p1,tcomp.p2) + coint_png
 ```
 
-<img src="GLS_Scaled0_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="GLS_Scaled0/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 The following example uses fourier series, instead of dummies, to
 account for seasonality and to reduce the number of regression terms
@@ -246,7 +246,7 @@ mod.lm <- lm(ind2 ~ age.mu + pctF + pctP1 + S1 + C1 , data=GrpDo)
 check_model(mod.lm,verbose=FALSE)
 ```
 
-<img src="GLS_Scaled0_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="GLS_Scaled0/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
 The following checks for independence of residuals.
 
@@ -275,7 +275,7 @@ p.res/wrap_plots(p.acf,p.pacf) + plot_annotation(
   caption = paste0("Durbin-Watson test: p =", round(dw$p.value,4))) & theme_minimal()
 ```
 
-![](GLS_Scaled0_files/figure-gfm/autocor_patch-1.png)<!-- -->
+![](GLS_Scaled0/autocor_patch-1.png)<!-- -->
 
 # 4 OLS vs GLS Model Comparisons
 
