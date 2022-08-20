@@ -52,6 +52,7 @@ demographics (age), dates (MO,YR,dt), and a couple of numeric variables
 (ind1 and ind2).
 
 ``` r
+options(scipen=999)
 db1 <- read.table("https://raw.githubusercontent.com/AMNakamura/miscellanea/master/datasets/FakeCohort1.txt",sep="|",header=T) 
 ```
 
@@ -109,7 +110,7 @@ library(patchwork)
 wrap_plots(plots) & theme_minimal()
 ```
 
-<img src="gls_Scaled0/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+<img src="GLS_Scaled0_files/figure-gfm/tsplots-1.png" style="display: block; margin: auto;" />
 
 # 3 Data Preparation
 
@@ -170,7 +171,7 @@ z<- bind_rows(coint) %>%
       footnote = "Completely random data. ",
       locations = cells_title(groups="title")) 
 
-invisible(gtsave(z,"coint.png"))
+invisible(gtsave(z,"coint.png",vwidth=500))
 
 coint_png <- png::readPNG('coint.png', native=TRUE)
 ```
@@ -191,14 +192,12 @@ tcomp2 <- decompose(tindD)
 
 tcomp.p2 <- forecast::autoplot(tcomp2, main="Decomposition \nAfter Differencing") 
 
-wrap_plots(tcomp.p1,tcomp.p2) + coint_png & theme_minimal()
+z <- wrap_plots(tcomp.p1,tcomp.p2) + coint_png & theme_minimal()
 ```
 
-<img src="gls_Scaled0/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
-
-The following example uses fourier series, instead of dummies, to
-account for seasonality and to reduce the number of regression terms
-added to the model.
+![](CaptureDecomps.png) The following example uses fourier series,
+instead of dummies, to account for seasonality and to reduce the number
+of regression terms added to the model.
 
 ``` r
 # Helper function to find the number of fourier terms (k) that give the best fit for tind2, courtesy https://robjhyndman.com/hyndsight/forecasting-weekly-data/. 
@@ -245,10 +244,19 @@ GrpDo <- GrpD[3:71,]  # Removes observation # 1, an outlier and influential obse
 mod.lm <- lm(ind2 ~ age.mu + pctF + pctP1 + S1 + C1 , data=GrpDo)
 
 
+png(filename="check_model.png",width = 600, height = 600)
 check_model(mod.lm,verbose=FALSE)
+dev.off()
 ```
 
-<img src="gls_Scaled0/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+    png 
+      2 
+
+<center>
+
+![](check_model.png)
+
+</center>
 
 The following checks for independence of residuals.
 
@@ -276,7 +284,8 @@ p.res/wrap_plots(p.acf,p.pacf) + plot_annotation(
   title = "Residuals check, autocorrelation, partial autocorrelation",
   caption = paste0("Durbin-Watson test: p =", round(dw$p.value,4))) & theme_minimal()
 ```
-<img src="gls_Scaled0/autocor_patch-1.png" style="display: block; margin: auto;" />
+
+![](GLS_Scaled0_files/figure-gfm/autocor_patch-1.png)<!-- -->
 
 # 4 OLS vs GLS Model Comparisons
 
@@ -316,7 +325,8 @@ tmp<- modelsummary(models, output="gt",
 
 invisible(gtsave(tmp,"modelcompare1.png"))
 ```
-<img src="gls_Scaled0/modelcompare1.png" style="display: block; margin: auto;" />
+
+![](modelcompare1.png)
 
 The following runs an anova() test to see if the more complex model(s)
 is/are better than the simpler model(s). Use lists, as needed, flatten
@@ -349,7 +359,11 @@ models.df <- as.data.frame(do.call(rbind, lapply(models, as.data.frame))) %>%
 invisible(gtsave(tmp,"modelcompare2.png"))
 ```
 
-<img src="gls_Scaled0/modelcompare2.png" style="display: block; margin: auto;" />
+<center>
+
+![](modelcompare1.png)
+
+</center>
 
 # 5 Summary Table
 
@@ -371,8 +385,11 @@ tmp <- modelsummary(mod.gls1, output="gt",
 invisible(gtsave(tmp,"modelfinal.png"))
 ```
 
-<img src="gls_Scaled0/modelfinal.png" style="display: block; margin: auto;" />
+<center>
 
+![](modelfinal.png)
+
+</center>
 
 # 6 Software acknowledgements (Most recent updates)
 
