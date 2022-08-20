@@ -109,7 +109,7 @@ library(patchwork)
 wrap_plots(plots) & theme_minimal()
 ```
 
-<img src="GLS_Scaled0_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+<img src="GLS_Scaled0/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
 
 # 3 Data Preparation
 
@@ -194,7 +194,7 @@ tcomp.p2 <- forecast::autoplot(tcomp2, main="Decomposition \nAfter Differencing"
 wrap_plots(tcomp.p1,tcomp.p2) + coint_png & theme_minimal()
 ```
 
-<img src="GLS_Scaled0_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="GLS_Scaled0/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 The following example uses fourier series, instead of dummies, to
 account for seasonality and to reduce the number of regression terms
@@ -248,7 +248,7 @@ mod.lm <- lm(ind2 ~ age.mu + pctF + pctP1 + S1 + C1 , data=GrpDo)
 check_model(mod.lm,verbose=FALSE)
 ```
 
-<img src="GLS_Scaled0_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="GLS_Scaled0/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
 The following checks for independence of residuals.
 
@@ -276,8 +276,7 @@ p.res/wrap_plots(p.acf,p.pacf) + plot_annotation(
   title = "Residuals check, autocorrelation, partial autocorrelation",
   caption = paste0("Durbin-Watson test: p =", round(dw$p.value,4))) & theme_minimal()
 ```
-
-![](GLS_Scaled0_files/figure-gfm/autocor_patch-1.png)<!-- -->
+<img src="GLS_Scaled0/autocor_patch-1.png" style="display: block; margin: auto;" />
 
 # 4 OLS vs GLS Model Comparisons
 
@@ -317,8 +316,7 @@ tmp<- modelsummary(models, output="gt",
 
 invisible(gtsave(tmp,"modelcompare1.png"))
 ```
-
-![](modelcompare1.png)
+<img src="GLS_Scaled0/amodelcompare1.png" style="display: block; margin: auto;" />
 
 The following runs an anova() test to see if the more complex model(s)
 is/are better than the simpler model(s). Use lists, as needed, flatten
@@ -351,7 +349,7 @@ models.df <- as.data.frame(do.call(rbind, lapply(models, as.data.frame))) %>%
 invisible(gtsave(tmp,"modelcompare2.png"))
 ```
 
-![](modelcompare1.png)
+<img src="GLS_Scaled0/amodelcompare2.png" style="display: block; margin: auto;" />
 
 # 5 Summary Table
 
@@ -373,7 +371,8 @@ tmp <- modelsummary(mod.gls1, output="gt",
 invisible(gtsave(tmp,"modelfinal.png"))
 ```
 
-![](modelfinal.png)
+<img src="GLS_Scaled0/amodelfinal.png" style="display: block; margin: auto;" />
+
 
 # 6 Software acknowledgements (Most recent updates)
 
