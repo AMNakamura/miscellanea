@@ -173,7 +173,7 @@ wrap_plots(decomp.p) + plot_annotation(
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") 
 ```
 <center>
-<img src="CounterFactual_ITS_Dashboards/decomps-1.png" style="display: block; margin: auto;" />
+<img src="Counterfactual_ITS_Dashboards/decomps-1.png" style="display: block; margin: auto;" />
 </center>
 
 
@@ -227,7 +227,7 @@ wrap_plots(i.plot) +  plot_layout(ncol = 2) + plot_annotation(
   caption = "Controlling for ct") & theme_minimal()
 ```
 <center>
-<img src="CounterFactual_ITS_Dashboards/iplots-1.png" style="display: block; margin: auto;" />
+<img src="Counterfactual_ITS_Dashboards/iplots-1.png" style="display: block; margin: auto;" />
 </center>
 
 # Software Acknowledgements
