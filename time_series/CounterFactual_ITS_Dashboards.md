@@ -162,7 +162,7 @@ wrap_plots(season.p) + plot_annotation(
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") 
 ```
 
-![](CounterFactual_ITS_Dashboards_files/figure-gfm/seasonals-1.png)<!-- -->
+![](CounterFactual_ITS_Dashboards/seasonals-1.png)<!-- -->
 
 ``` r
 wrap_plots(decomp.p) + plot_annotation(
@@ -171,7 +171,7 @@ wrap_plots(decomp.p) + plot_annotation(
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") 
 ```
 
-![](CounterFactual_ITS_Dashboards_files/figure-gfm/decomps-1.png)<!-- -->
+![](CounterFactual_ITS_Dashboards/decomps-1.png)<!-- -->
 
 # Model build
 
@@ -223,7 +223,7 @@ wrap_plots(i.plot) +  plot_layout(ncol = 2) + plot_annotation(
   caption = "Controlling for ct") & theme_minimal()
 ```
 
-![](CounterFactual_ITS_Dashboards_files/figure-gfm/iplots-1.png)<!-- -->
+![](CounterFactual_ITS_Dashboards/iplots-1.png)<!-- -->
 
 # Software Acknowledgements
 
