@@ -73,7 +73,7 @@ DSRP
 
 </H1>
 
-<img src="D.png" style="width:70.0%" />
+<img src="DSRP0/D.png" style="width:70.0%" />
 
 </center>
 
@@ -159,7 +159,8 @@ DSRP
 
 </H1>
 
-![](DS.png)
+<img src="DSRP0/DS.png" style="width:70.0%" />
+
 
 </center>
 
@@ -262,7 +263,8 @@ DSRP
 
 </H1>
 
-![](DSR.png)
+<img src="DSRP0/DSR.png" style="width:70.0%" />
+
 
 </center>
 
@@ -393,7 +395,7 @@ label = 'What It Is Not'
 DSRP
 
 </H1>
+<img src="DSRP0/DSRP.png" style="width:70.0%" />
 
-![](DSRP.png)
 
 </center>
