@@ -108,27 +108,6 @@ ss   <- AddSeasonal(ss,IND1,nseasons = 12)
 mod1 <- invisible(bsts(IND1 ~ x1, ss, niter = 1000, seed = 1234))
 ```
 
-    ## =-=-=-=-= Iteration 0 Fri Aug 26 18:21:07 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 100 Fri Aug 26 18:21:07 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 200 Fri Aug 26 18:21:07 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 300 Fri Aug 26 18:21:07 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 400 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 500 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 600 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 700 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 800 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 900 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-
 ``` r
 ### Series 2
 ss   <- list()  
@@ -136,27 +115,6 @@ sdy  <- sd(IND2, na.rm = TRUE)
 ss   <- AddStaticIntercept(ss,IND2,initial.state.prior = NormalPrior(IND2[1],sdy))
 mod2 <- invisible(bsts(IND2 ~ x2, ss, niter = 1000, seed = 1234))
 ```
-
-    ## =-=-=-=-= Iteration 0 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 100 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 200 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 300 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 400 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 500 Fri Aug 26 18:21:08 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 600 Fri Aug 26 18:21:09 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 700 Fri Aug 26 18:21:09 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 800 Fri Aug 26 18:21:09 2022
-    ##  =-=-=-=-=
-    ## =-=-=-=-= Iteration 900 Fri Aug 26 18:21:09 2022
-    ##  =-=-=-=-=
 
 ## Predictions
 
@@ -167,7 +125,7 @@ pred1 <- predict(mod1, newdata= f.x1 ,horizon=H, seed=12345,
 plot(pred1, main="Predictions for IND1", style="boxplot")
 ```
 
-<img src="CombineDelta_files/figure-gfm/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
+<img src="CombineDelta/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 pred2 <- predict(mod2, newdata= f.x2 ,horizon=H, seed=12345,
@@ -176,7 +134,7 @@ pred2 <- predict(mod2, newdata= f.x2 ,horizon=H, seed=12345,
 plot(pred2, main="Predictions for IND2", style="boxplot")
 ```
 
-<img src="CombineDelta_files/figure-gfm/unnamed-chunk-3-2.png" style="display: block; margin: auto;" />
+<img src="CombineDelta/unnamed-chunk-3-2.png" style="display: block; margin: auto;" />
 
 # Distributions
 
@@ -227,8 +185,7 @@ wrap_plots(d1.p, d2.p) + plot_annotation(
   caption = 'Source: FakeCohort1'
 )+ plot_layout(guides = "collect") & theme_minimal() & theme(legend.position = "bottom") & guides(colour = guide_legend(nrow = 1))
 ```
-
-![](CombineDelta_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+<img src="CombineDelta/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 Next steps find the upper and lower plausible prediction ranges by
 calculating critical values for each posterior distribution. Two values,
@@ -273,8 +230,8 @@ ggplot(data=crit, aes(x=t)) +
   scale_fill_discrete(name = "Series Response") +
   guides(color="none")
 ```
+<img src="CombineDelta/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
-![](CombineDelta_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 # Creating a composite (product)
 
@@ -342,8 +299,9 @@ ggplot(data=comp,aes(x=t)) +
   theme_minimal()
 ```
 
-![](CombineDelta_files/figure-gfm/unnamed-chunk-9-1.png)<!-- --> \#
-References - Software
+<img src="CombineDelta/unnamed-chunk-9-1.png" style="display: block; margin: auto;" />
+
+# References - Software
 
 Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source
 Software, 4(43), 1686, <https://doi.org/10.21105/joss.01686>
