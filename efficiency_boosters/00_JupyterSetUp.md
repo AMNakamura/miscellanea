@@ -232,14 +232,8 @@ plt.ylabel('-sigmoid(x)')
 plt.show()
 ```
 
-
-    
-![png](output_8_0.png)
-    
-
-
-Next, rescale list from -6 to 6 and apply the expit function again. 
-
+![](/00_JupyterSetUp/keCohort/00_JupyterSetup_grph.png)<!-- -->
+ 
 # Exporting 
 
 Navigate to File > Download as...
