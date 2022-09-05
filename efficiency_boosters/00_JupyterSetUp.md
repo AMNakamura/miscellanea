@@ -232,8 +232,12 @@ plt.ylabel('-sigmoid(x)')
 plt.show()
 ```
 
-![](/00_JupyterSetUp/keCohort/00_JupyterSetup_grph.png)<!-- -->
- 
+![](/efficiency_boosters/00_JupyterSetup/00_JupyterSetup_grph.png)<!-- -->
+
+<img src="[img_girl.jpg](https://github.com/AMNakamura/miscellanea/blob/master/efficiency_boosters/00_JupyterSetup/00_JupyterSetup_grph.png
+ )" alt="Basic line graph" width="500" height="600">
+
+
 # Exporting 
 
 Navigate to File > Download as...
