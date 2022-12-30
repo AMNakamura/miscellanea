@@ -6,7 +6,7 @@
 	WRITTEN BY: Ann Nakamura
 	DATE:		April 2017
 *********************************************************************/
-
+/* Sample comment */
 %global user;
 
 %Window getuser
